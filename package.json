@@ -9,8 +9,36 @@
   "keywords": [
     "MajidAPI",
     "API",
-    "WebService"
+    "WebService",
+    "Instagram",
+    "Instagram Downloader",
+    "Download Isntagram",
+    "NumberBook",
+    "inquiry",
+    "GPT",
+    "GPT 3",
+    "AI",
+    "Chat GPT",
+    "TTS",
+    "TextToSpeech",
+    "TikTok",
+    "TikTok Downloader",
+    "Digikala",
+    "Torob",
+    "News",
+    "News API"
   ],
   "author": "Majid Rajabi Vardanjani",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MajidRajabiVardanjani/majidapi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MajidRajabiVardanjani/majidapi/issues"
+  },
+  "homepage": "https://majidapi.ir",
+  "dependencies": {
+    "axios": "^1.8.1"
+  }
 }
