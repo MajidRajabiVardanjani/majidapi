@@ -24,6 +24,7 @@ npm i majidapi --save
 - **[Torob](#Torob)**
 - **[AkharinKhabar](#AkharinKhabar)**
 - **[Movies and series FilmRail](#Movies-and-series-FilmRail)**
+- **[Melodify](#Melodify)**
 
 ## Instagram
 
@@ -272,5 +273,49 @@ filmRail({
 filmRail({
     method: "details",
     id: "Movie ID"
+}).then(console.log);
+```
+
+## Melodify
+
+### Only for Iran
+
+```javascript
+const {melodify} = require("majidapi/modules/music");
+
+// The latest
+melodify({
+    method: "newest",
+    page: 1
+}).then(console.log);
+
+// Mixes
+melodify({
+    method: "mix",
+    page: 1
+}).then(console.log);
+
+// The most popular
+melodify({
+    method: "popular",
+    page: 1
+}).then(console.log);
+
+// Instagram trends
+melodify({
+    method: "instatrend",
+    page: 1
+}).then(console.log);
+
+// Song search
+melodify({
+    method: "search",
+    search: "song name",
+    page: 1
+}).then(console.log);
+
+// Download
+melodify({
+    trackId: "Track ID"
 }).then(console.log);
 ```
