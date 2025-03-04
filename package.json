@@ -1,6 +1,6 @@
 {
   "name": "majidapi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Majid API - WebServices",
   "main": "index.js",
   "scripts": {
