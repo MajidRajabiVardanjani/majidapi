@@ -1,0 +1,16 @@
+{
+  "name": "majidapi",
+  "version": "1.0.0",
+  "description": "Majid API - WebServices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MajidAPI",
+    "API",
+    "WebService"
+  ],
+  "author": "Majid Rajabi Vardanjani",
+  "license": "ISC"
+}
