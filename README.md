@@ -23,6 +23,7 @@ npm i majidapi --save
 - **[Digikala](#Digikala)**
 - **[Torob](#Torob)**
 - **[AkharinKhabar](#AkharinKhabar)**
+- **[Movies and series FilmRail](#Movies-and-series-FilmRail)**
 
 ## Instagram
 
@@ -234,5 +235,42 @@ akharinKhabar({
 akharinKhabar({
     method: "details",
     newsId: "News ID"
+}).then(console.log);
+```
+
+## Movies and series FilmRail
+
+### Only for Iran
+
+```javascript
+const {filmRail} = require("majidapi/modules/movie");
+
+// Home page information
+filmRail({
+    method: "home"
+}).then(console.log);
+
+// Get the list of movies
+filmRail({
+    method: "movies",
+    page: 1
+}).then(console.log);
+
+// Get the list of series
+filmRail({
+    method: "series",
+    page: 1
+}).then(console.log);
+
+// Search for movies and series
+filmRail({
+    method: "search",
+    search: "The name of the movie or series"
+}).then(console.log);
+
+// Specifications and download
+filmRail({
+    method: "details",
+    id: "Movie ID"
 }).then(console.log);
 ```
