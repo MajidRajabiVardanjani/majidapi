@@ -316,6 +316,7 @@ melodify({
 
 // Download
 melodify({
-    trackId: "Track ID"
+    trackId: "Track ID",
+    out: "track.mp3"
 }).then(console.log);
 ```

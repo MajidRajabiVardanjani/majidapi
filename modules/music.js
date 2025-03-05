@@ -6,11 +6,12 @@ module.exports = {
                    method = "search",
                    search = "",
                    page = 1,
-                   trackId = ""
+                   trackId = "",
+                   out = ""
                }) => {
         return new Promise(resolve => {
             if (method === "download") {
-                config.downloadFile(`https://api.majidapi.ir/music/melodify?action=download&trackId=${trackId}`)
+                config.downloadFile(`https://api.majidapi.ir/music/melodify?action=download&trackId=${trackId}`, out)
                     .then(r => {
                         resolve(r);
                     })
