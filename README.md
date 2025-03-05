@@ -20,6 +20,7 @@ npm i majidapi --save
 - **[TikTok](#TikTok)**
 - **[NumberBook](#NumberBook)**
 - **[TempMail](#TempMail)**
+- **[Spotify](#Spotify)**
 - **[Card number inquiry](#Card-number-inquiry)**
 - **[Digikala](#Digikala)**
 - **[Torob](#Torob)**
@@ -355,5 +356,17 @@ tempMail({
 tempMail({
     method: "messages",
     email: "The email address you got from the 'new' method"
+}).then(console.log);
+```
+
+## Spotify
+
+```javascript
+const {spotify} = require("majidapi/modules/music");
+
+// Download from Spotify
+spotify({
+    url: "https://open.spotify.com/track/...",
+    out: "track.mp3"
 }).then(console.log);
 ```

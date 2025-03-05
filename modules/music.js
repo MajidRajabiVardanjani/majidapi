@@ -28,5 +28,17 @@ module.exports = {
                     });
             }
         })
+    },
+
+    spotify: ({url = "", out = "track.mp3"}) => {
+        return new Promise(resolve => {
+            config.downloadFile(url, out)
+                .then(r => {
+                    resolve(r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }
