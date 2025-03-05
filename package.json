@@ -27,7 +27,9 @@
     "Torob",
     "News",
     "News API",
-    "TempMail"
+    "TempMail",
+    "Spotify",
+    "Spotify Downloader"
   ],
   "author": "Majid Rajabi Vardanjani",
   "license": "ISC",

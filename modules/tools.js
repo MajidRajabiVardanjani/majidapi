@@ -23,5 +23,16 @@ module.exports = {
                     config.error(err);
                 });
         })
+    },
+    qrcode: ({text = "", size = 512, out = "qrcode.png"}) => {
+        return new Promise(resolve => {
+            config.downloadFile(`${config.api}/tools/qrcode?text=${encodeURI(text)}&size=${size}`, out)
+                .then(r => {
+                    resolve(r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

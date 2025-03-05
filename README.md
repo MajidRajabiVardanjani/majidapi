@@ -21,6 +21,7 @@ npm i majidapi --save
 - **[NumberBook](#NumberBook)**
 - **[TempMail](#TempMail)**
 - **[Spotify](#Spotify)**
+- **[QRCode Creation](#QRCode-Creation)**
 - **[Card number inquiry](#Card-number-inquiry)**
 - **[Digikala](#Digikala)**
 - **[Torob](#Torob)**
@@ -30,6 +31,8 @@ npm i majidapi --save
 - **[Bonbast](#Bonbast)**
 - **[Gold Price](#Gold-Price)**
 - **[Mobile Price](#Mobile-Price)**
+- **[Car Price](#Car-Price)**
+- **[BitPin Crypto Currency Price](#BitPin-Crypto-Currency-Price)**
 
 ## Instagram
 
@@ -368,5 +371,44 @@ const {spotify} = require("majidapi/modules/music");
 spotify({
     url: "https://open.spotify.com/track/...",
     out: "track.mp3"
+}).then(console.log);
+```
+
+## Car Price
+
+```javascript
+const {car} = require("majidapi/modules/price");
+
+// Price list
+car({
+    method: "list"
+}).then(console.log);
+
+// Get the description
+car({
+    method: "info",
+    id: "Car ID"
+}).then(console.log);
+```
+
+## BitPin Crypto Currency Price
+
+```javascript
+const {bitpin} = require("majidapi/modules/price");
+
+// Get rates
+bitpin().then(console.log);
+```
+
+## QRCode Creation
+
+```javascript
+const {qrcode} = require("majidapi/modules/tools");
+
+// QRCode
+qrcode({
+    text: "Hello",
+    size: 512,
+    out: "qrcode.png"
 }).then(console.log);
 ```
