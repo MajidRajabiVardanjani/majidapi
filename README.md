@@ -25,6 +25,9 @@ npm i majidapi --save
 - **[AkharinKhabar](#AkharinKhabar)**
 - **[Movies and series FilmRail](#Movies-and-series-FilmRail)**
 - **[Melodify](#Melodify)**
+- **[Bonbast](#Bonbast)**
+- **[Gold Price](#Gold-Price)**
+- **[Mobile Price](#Mobile-Price)**
 
 ## Instagram
 
@@ -105,8 +108,6 @@ tiktok({
 
 ## NumberBook
 
-### Only for Iran
-
 ```javascript
 const {numberBook} = require("majidapi/modules/inquiry");
 
@@ -118,8 +119,6 @@ numberBook({
 ```
 
 ## Card number inquiry
-
-### Only for Iran
 
 ```javascript
 const {card, sheba} = require("majidapi/modules/inquiry");
@@ -137,8 +136,6 @@ sheba({
 ```
 
 ## Digikala
-
-### Only for Iran
 
 ```javascript
 const {digikala} = require("majidapi/modules/shopping");
@@ -176,8 +173,6 @@ digikala({
 
 ## Torob
 
-### Only for Iran
-
 ```javascript
 const {torob} = require("majidapi/modules/shopping");
 
@@ -209,8 +204,6 @@ torob({
 
 ## AkharinKhabar
 
-### Only for Iran
-
 ```javascript
 const {akharinKhabar} = require("majidapi/modules/news");
 
@@ -240,8 +233,6 @@ akharinKhabar({
 ```
 
 ## Movies and series FilmRail
-
-### Only for Iran
 
 ```javascript
 const {filmRail} = require("majidapi/modules/movie");
@@ -277,8 +268,6 @@ filmRail({
 ```
 
 ## Melodify
-
-### Only for Iran
 
 ```javascript
 const {melodify} = require("majidapi/modules/music");
@@ -318,5 +307,34 @@ melodify({
 melodify({
     trackId: "Track ID",
     out: "track.mp3"
+}).then(console.log);
+```
+
+## Bonbast
+
+```javascript
+const {bonbast} = require("majidapi/modules/price");
+
+// Bonbast
+bonbast().then(console.log);
+```
+
+## Gold Price
+
+```javascript
+const {gold} = require("majidapi/modules/price");
+
+// Gold
+gold().then(console.log);
+```
+
+## Mobile Price
+
+```javascript
+const {mobile} = require("majidapi/modules/price");
+
+// Mobile
+mobile({
+    model: "s25"
 }).then(console.log);
 ```

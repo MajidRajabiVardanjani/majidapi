@@ -5,5 +5,6 @@ module.exports = {
     tools: require("./modules/tools"),
     shopping: require("./modules/shopping"),
     news: require("./modules/news"),
-    movie: require("./modules/movie")
+    movie: require("./modules/movie"),
+    price: require("./modules/price")
 }
