@@ -19,6 +19,7 @@ npm i majidapi --save
 - **[Text To Speech](#Text-To-Speech)**
 - **[TikTok](#TikTok)**
 - **[NumberBook](#NumberBook)**
+- **[TempMail](#TempMail)**
 - **[Card number inquiry](#Card-number-inquiry)**
 - **[Digikala](#Digikala)**
 - **[Torob](#Torob)**
@@ -337,5 +338,22 @@ const {mobile} = require("majidapi/modules/price");
 // Mobile
 mobile({
     model: "s25"
+}).then(console.log);
+```
+
+## TempMail
+
+```javascript
+const {tempMail} = require("majidapi/modules/tools");
+
+// Create a new email
+tempMail({
+    method: "new"
+}).then(console.log);
+
+// Receive messages
+tempMail({
+    method: "messages",
+    email: "The email address you got from the 'new' method"
 }).then(console.log);
 ```
