@@ -56,5 +56,17 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+
+    pinterest: ({method = "download", search = "", url = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/social/pinterest?action=${method}&s=${encodeURI(search)}&url=${url}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

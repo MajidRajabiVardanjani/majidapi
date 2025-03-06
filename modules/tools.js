@@ -34,5 +34,16 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    googleTranslate: ({text = "", to = "en"}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/tools/translate?q=${encodeURI(text)}&to=${to}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

@@ -18,6 +18,8 @@ npm i majidapi --save
 - **[GPT](#GPT)**
 - **[Text To Speech](#Text-To-Speech)**
 - **[TikTok](#TikTok)**
+- **[Pinterest](#Pinterest)**
+- **[Google Translate](#Google-Translate)**
 - **[NumberBook](#NumberBook)**
 - **[TempMail](#TempMail)**
 - **[Spotify](#Spotify)**
@@ -410,5 +412,35 @@ qrcode({
     text: "Hello",
     size: 512,
     out: "qrcode.png"
+}).then(console.log);
+```
+
+## Pinterest
+
+```javascript
+const {pinterest} = require("majidapi/modules/social");
+
+// Search
+pinterest({
+    method: "search",
+    search: "Mobile"
+}).then(console.log);
+
+// Download Video
+pinterest({
+    method: "download",
+    url: "https://pin.it/..."
+}).then(console.log);
+```
+
+## Google Translate
+
+```javascript
+const {googleTranslate} = require("majidapi/modules/tools");
+
+// Translate
+googleTranslate({
+    text: "سلام",
+    to: "en"
 }).then(console.log);
 ```

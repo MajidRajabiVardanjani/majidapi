@@ -29,7 +29,10 @@
     "News API",
     "TempMail",
     "Spotify",
-    "Spotify Downloader"
+    "Spotify Downloader",
+    "Pinterest",
+    "Pinterest API",
+    "Pinterest Downloader"
   ],
   "author": "Majid Rajabi Vardanjani",
   "license": "ISC",
