@@ -23,6 +23,8 @@ npm i majidapi --save
 - **[NumberBook](#NumberBook)**
 - **[TempMail](#TempMail)**
 - **[Spotify](#Spotify)**
+- **[X Downloader](#X-Downloader)**
+- **[EPhoto Logo](#EPhoto-Logo)**
 - **[QRCode Creation](#QRCode-Creation)**
 - **[Card number inquiry](#Card-number-inquiry)**
 - **[Digikala](#Digikala)**
@@ -35,6 +37,8 @@ npm i majidapi --save
 - **[Mobile Price](#Mobile-Price)**
 - **[Car Price](#Car-Price)**
 - **[BitPin Crypto Currency Price](#BitPin-Crypto-Currency-Price)**
+- **[Fal](#Fal)**
+- **[Joke](#Joke)**
 
 ## Instagram
 
@@ -442,5 +446,45 @@ const {googleTranslate} = require("majidapi/modules/tools");
 googleTranslate({
     text: "سلام",
     to: "en"
+}).then(console.log);
+```
+
+## Fal
+
+```javascript
+const {fal} = require("majidapi/modules/fun");
+
+fal({
+    type: "text" // text or photo
+}).then(console.log);
+```
+
+## Joke
+
+```javascript
+const {joke} = require("majidapi/modules/fun");
+
+joke().then(console.log);
+```
+
+## EPhoto Logo Logo
+
+```javascript
+const {ePhoto} = require("majidapi/modules/image");
+
+// Making a logo
+ePhoto({
+    text: "MajidAPI"
+}).then(console.log);
+```
+
+## X Downloader
+
+```javascript
+const {x} = require("majidapi/modules/social");
+
+// Download
+x({
+    videoUrl: "x.com video url"
 }).then(console.log);
 ```

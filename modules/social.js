@@ -68,5 +68,17 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+
+    x: ({videoUrl = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/social/x?url=${encodeURI(videoUrl)}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

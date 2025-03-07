@@ -6,5 +6,7 @@ module.exports = {
     shopping: require("./modules/shopping"),
     news: require("./modules/news"),
     movie: require("./modules/movie"),
-    price: require("./modules/price")
+    price: require("./modules/price"),
+    fun: require("./modules/fun"),
+    image: require("./modules/image")
 }
