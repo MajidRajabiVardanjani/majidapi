@@ -24,7 +24,7 @@ npm i majidapi --save
 - **[TempMail](#TempMail)**
 - **[Spotify](#Spotify)**
 - **[X Downloader](#X-Downloader)**
-- **[EPhoto Logo](#EPhoto-Logo)**
+- **[Logo](#Logo)**
 - **[QRCode Creation](#QRCode-Creation)**
 - **[Card number inquiry](#Card-number-inquiry)**
 - **[Digikala](#Digikala)**
@@ -467,7 +467,7 @@ const {joke} = require("majidapi/modules/fun");
 joke().then(console.log);
 ```
 
-## EPhoto Logo Logo
+## Logo
 
 ```javascript
 const {ePhoto} = require("majidapi/modules/image");
