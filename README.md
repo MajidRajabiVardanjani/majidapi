@@ -26,6 +26,7 @@ npm i majidapi --save
 - **[X Downloader](#X-Downloader)**
 - **[Logo](#Logo)**
 - **[QRCode Creation](#QRCode-Creation)**
+- **[GooglePlay](#GooglePlay)**
 - **[Card number inquiry](#Card-number-inquiry)**
 - **[Digikala](#Digikala)**
 - **[Torob](#Torob)**
@@ -39,6 +40,7 @@ npm i majidapi --save
 - **[BitPin Crypto Currency Price](#BitPin-Crypto-Currency-Price)**
 - **[Fal](#Fal)**
 - **[Joke](#Joke)**
+- **[Aparat](#Aparat)**
 
 ## Instagram
 
@@ -486,5 +488,58 @@ const {x} = require("majidapi/modules/social");
 // Download
 x({
     videoUrl: "x.com video url"
+}).then(console.log);
+```
+
+## GooglePlay
+
+```javascript
+const {googlePlay} = require("majidapi/modules/googlePlay");
+
+// Search
+googlePlay({
+    method: "search",
+    search: "vpn"
+}).then(console.log);
+
+// Download
+googlePlay({
+    method: "download",
+    search: "Google play app url"
+}).then(console.log);
+```
+
+## Aparat
+
+```javascript
+const {aparat} = require("majidapi/modules/vide");
+
+// Home
+aparat({
+    method: "home"
+}).then(console.log);
+
+// Categories
+aparat({
+    method: "categories"
+}).then(console.log);
+
+// Category
+aparat({
+    method: "category",
+    catid: "Category ID",
+    page: 1
+}).then(console.log);
+
+// Search
+aparat({
+    method: "search",
+    search: "Music"
+}).then(console.log);
+
+// Info & Download
+aparat({
+    method: "download",
+    uid: "Video ID (uid)"
 }).then(console.log);
 ```

@@ -32,7 +32,9 @@
     "Spotify Downloader",
     "Pinterest",
     "Pinterest API",
-    "Pinterest Downloader"
+    "Pinterest Downloader",
+    "GooglePlay Downloader",
+    "Aparat Downloader"
   ],
   "author": "Majid Rajabi Vardanjani",
   "license": "ISC",

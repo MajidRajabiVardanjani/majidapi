@@ -8,5 +8,7 @@ module.exports = {
     movie: require("./modules/movie"),
     price: require("./modules/price"),
     fun: require("./modules/fun"),
-    image: require("./modules/image")
+    image: require("./modules/image"),
+    googlePlay: require("./modules/googlePlay"),
+    video: require("./modules/video")
 }
