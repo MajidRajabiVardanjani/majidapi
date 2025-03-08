@@ -41,6 +41,7 @@ npm i majidapi --save
 - **[Fal](#Fal)**
 - **[Joke](#Joke)**
 - **[Aparat](#Aparat)**
+- **[Weather](#Weather)**
 
 ## Instagram
 
@@ -541,5 +542,16 @@ aparat({
 aparat({
     method: "download",
     uid: "Video ID (uid)"
+}).then(console.log);
+```
+
+## Weather
+
+```javascript
+const {weather} = require("majidapi/modules/tools");
+
+// Weather
+weather({
+    city: "tehran"
 }).then(console.log);
 ```

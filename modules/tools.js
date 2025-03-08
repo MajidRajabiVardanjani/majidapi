@@ -45,5 +45,16 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    weather: ({city = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/tools/weather?city=${encodeURI(city)}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

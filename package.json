@@ -34,7 +34,9 @@
     "Pinterest API",
     "Pinterest Downloader",
     "GooglePlay Downloader",
-    "Aparat Downloader"
+    "Aparat Downloader",
+    "Weather API",
+    "Weather"
   ],
   "author": "Majid Rajabi Vardanjani",
   "license": "ISC",
