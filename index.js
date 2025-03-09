@@ -10,5 +10,6 @@ module.exports = {
     fun: require("./modules/fun"),
     image: require("./modules/image"),
     googlePlay: require("./modules/googlePlay"),
-    video: require("./modules/video")
+    video: require("./modules/video"),
+    myket: require("./modules/myket")
 }

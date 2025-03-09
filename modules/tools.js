@@ -56,5 +56,16 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    captcha: ({length = 10}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/tools/captcha?length=${length}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

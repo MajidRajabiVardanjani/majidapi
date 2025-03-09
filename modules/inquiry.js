@@ -7,7 +7,7 @@ module.exports = {
         return new Promise(resolve => {
             axios.get(`${config}/inquiry/numberbook?phone=${phoneNumber}`)
                 .then(r => {
-                    config.success(resolve, r.data);
+                    config.success(resolve, r);
                 })
                 .catch(err => {
                     config.error(resolve, err);
@@ -19,7 +19,7 @@ module.exports = {
         return new Promise(resolve => {
             axios.get(`${config}/inquiry/card?card=${cardNumber}`)
                 .then(r => {
-                    config.success(resolve, r.data);
+                    config.success(resolve, r);
                 })
                 .catch(err => {
                     config.error(resolve, err);
@@ -31,7 +31,7 @@ module.exports = {
         return new Promise(resolve => {
             axios.get(`${config}/inquiry/card?shba=${sheba}`)
                 .then(r => {
-                    config.success(resolve, r.data);
+                    config.success(resolve, r);
                 })
                 .catch(err => {
                     config.error(resolve, err);

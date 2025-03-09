@@ -42,6 +42,8 @@ npm i majidapi --save
 - **[Joke](#Joke)**
 - **[Aparat](#Aparat)**
 - **[Weather](#Weather)**
+- **[Myket](#Myket)**
+- **[Captcha](#Captcha)**
 
 ## Instagram
 
@@ -553,5 +555,34 @@ const {weather} = require("majidapi/modules/tools");
 // Weather
 weather({
     city: "tehran"
+}).then(console.log);
+```
+
+## Myket
+
+```javascript
+const {myket} = require("majidapi/modules/myket");
+
+// Search
+myket({
+    method: "search",
+    search: "App Name"
+}).then(console.log);
+
+// Info & Download
+myket({
+    method: "info",
+    packageName: "App Package Name"
+}).then(console.log);
+```
+
+## Captcha
+
+```javascript
+const {captcha} = require("majidapi/modules/tools");
+
+// Captcha generation
+captcha({
+    length: 10
 }).then(console.log);
 ```
