@@ -40,5 +40,30 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    soundCloud: ({method = "download", search = "", url = ""}) => {
+        let furl = `${config.api}/soundcloud`;
+
+        switch (method) {
+            case "search":
+                furl = `${furl}/search?s=${encodeURI(search)}`;
+                break;
+            case "info":
+                furl = `${furl}/info?url=${url}`;
+                break;
+            default:
+                furl = `${furl}/download?url=${url}`;
+                break;
+        }
+
+        return new Promise(resolve => {
+            axios.get(furl)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

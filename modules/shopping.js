@@ -57,5 +57,38 @@ module.exports = {
                 });
         })
 
+    },
+
+    mopon: ({method = "home", id = "", page = 1, search = ""}) => {
+
+        let furl = `${config.api}/mopon`;
+
+        switch (method) {
+            case "categories":
+                furl = `${furl}/categories`;
+                break;
+            case "category":
+                furl = `${furl}/category?id=${id}&page=${page}`;
+                break;
+            case "search":
+                furl = `${furl}/search?s=${encodeURI(search)}&page=${page}`;
+                break;
+            case "info":
+                furl = `${furl}/info?id=${id}`;
+                break;
+            default:
+                furl = `${furl}/home`;
+                break;
+        }
+
+        return new Promise(resolve => {
+            axios.get(furl)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

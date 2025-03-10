@@ -36,7 +36,10 @@
     "GooglePlay Downloader",
     "Aparat Downloader",
     "Weather API",
-    "Weather"
+    "SoundCloud",
+    "SoundCloud Download",
+    "SoundCloud Downloader",
+    "SoundCloud API"
   ],
   "author": "Majid Rajabi Vardanjani",
   "license": "ISC",

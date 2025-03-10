@@ -23,6 +23,7 @@ npm i majidapi --save
 - **[NumberBook](#NumberBook)**
 - **[TempMail](#TempMail)**
 - **[Spotify](#Spotify)**
+- **[SoundCloud](#SoundCloud)**
 - **[X Downloader](#X-Downloader)**
 - **[Logo](#Logo)**
 - **[QRCode Creation](#QRCode-Creation)**
@@ -44,6 +45,7 @@ npm i majidapi --save
 - **[Weather](#Weather)**
 - **[Myket](#Myket)**
 - **[Captcha](#Captcha)**
+- **[Mopon](#Mopon)**
 
 ## Instagram
 
@@ -584,5 +586,65 @@ const {captcha} = require("majidapi/modules/tools");
 // Captcha generation
 captcha({
     length: 10
+}).then(console.log);
+```
+
+## SoundCloud
+
+```javascript
+const {soundCloud} = require("majidapi/modules/music");
+
+// Search
+soundCloud({
+    method: "search",
+    search: "Shayea"
+}).then(console.log);
+
+// Info
+soundCloud({
+    method: "info",
+    url: "https://soundcloud.com/aslistream/too-ragi"
+}).then(console.log);
+
+// Info
+soundCloud({
+    method: "download",
+    url: "https://soundcloud.com/aslistream/too-ragi"
+}).then(console.log);
+```
+
+## Mopon
+
+```javascript
+const {mopon} = require("majidapi/modules/shopping");
+
+// Home
+mopon({
+    method: "home"
+}).then(console.log);
+
+// Categories
+mopon({
+    method: "categories"
+}).then(console.log);
+
+// Category
+mopon({
+    method: "category",
+    id: "zQoGQ",
+    page: 1
+}).then(console.log);
+
+// Search
+mopon({
+    method: "search",
+    search: "دیجی کالا",
+    page: 1
+}).then(console.log);
+
+// Info
+mopon({
+    method: "info",
+    id: "brkmG"
 }).then(console.log);
 ```
