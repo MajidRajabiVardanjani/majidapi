@@ -51,6 +51,7 @@ npm i majidapi --save
 - **[Estekhareh](#Estekhareh)**
 - **[DateTime](#DateTime)**
 - **[Drug information](#Drug-information)**
+- **[Crypto News](#Crypto-News)**
 
 ## Instagram
 
@@ -711,6 +712,24 @@ darooyab({
 darooyab({
     method: "info",
     url: "The link you got from the search method"
+}).then(console.log);
+```
+
+## Crypto News
+
+```javascript
+const {crypto} = require("majidapi/modules/news");
+
+// List
+crypto({
+    method: "list",
+    page: 1
+}).then(console.log);
+
+// Info
+crypto({
+    method: "info",
+    link: "The link you got from the search method"
 }).then(console.log);
 ```
 
