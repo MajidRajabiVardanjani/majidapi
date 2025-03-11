@@ -11,5 +11,7 @@ module.exports = {
     image: require("./modules/image"),
     googlePlay: require("./modules/googlePlay"),
     video: require("./modules/video"),
-    myket: require("./modules/myket")
+    myket: require("./modules/myket"),
+    dictionary: require("./modules/dictionary"),
+    drug: require("./modules/drug")
 }

@@ -46,6 +46,11 @@ npm i majidapi --save
 - **[Myket](#Myket)**
 - **[Captcha](#Captcha)**
 - **[Mopon](#Mopon)**
+- **[Dictionary of Dehkhoda](#Dictionary-of-Dehkhoda)**
+- **[Dictionary of names](#Dictionary-of-names)**
+- **[Estekhareh](#Estekhareh)**
+- **[DateTime](#DateTime)**
+- **[Drug information](#Drug-information)**
 
 ## Instagram
 
@@ -648,3 +653,65 @@ mopon({
     id: "brkmG"
 }).then(console.log);
 ```
+
+## Dictionary of Dehkhoda
+
+```javascript
+const {dehkhoda} = require("majidapi/modules/dictionary");
+
+// Dehkhoda
+dehkhoda({
+    word: "مجید"
+}).then(console.log);
+```
+
+## Dictionary of names
+
+```javascript
+const {names} = require("majidapi/modules/dictionary");
+
+// Names
+names({
+    name: "مجید"
+}).then(console.log);
+```
+
+## Estekhareh
+
+```javascript
+const {estekhareh} = require("majidapi/modules/fun");
+
+// Estekhareh
+estekhareh().then(console.log);
+```
+
+## DateTime
+
+```javascript
+const {dateTime} = require("majidapi/modules/tools");
+
+// Date & Time
+dateTime({
+    timeZone: "Asia/Tehran"
+}).then(console.log);
+```
+
+## Drug information
+
+```javascript
+const {darooyab} = require("majidapi/modules/drug");
+
+// Search
+darooyab({
+    method: "search",
+    search: "ملاتونین"
+}).then(console.log);
+
+// Info
+darooyab({
+    method: "info",
+    url: "The link you got from the search method"
+}).then(console.log);
+```
+
+
