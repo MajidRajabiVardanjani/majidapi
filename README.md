@@ -17,6 +17,7 @@ npm i majidapi --save
 - **[Instagram](#Instagram)**
 - **[GPT](#GPT)**
 - **[Text To Speech](#Text-To-Speech)**
+- **[AI Image Generator](#AI-Image-Generator)**
 - **[TikTok](#TikTok)**
 - **[Pinterest](#Pinterest)**
 - **[Google Translate](#Google-Translate)**
@@ -733,4 +734,13 @@ crypto({
 }).then(console.log);
 ```
 
+## AI Image Generator
 
+```javascript
+const {image} = require("majidapi/modules/ai");
+
+// Text To Image
+image({
+    prompt: "a cute cat"
+}).then(console.log);
+```

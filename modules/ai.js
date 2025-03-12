@@ -12,5 +12,16 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    image: ({prompt = "a cute cat"}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/ai/image?prompt=${encodeURI(prompt)}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }
