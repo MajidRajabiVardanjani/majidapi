@@ -53,6 +53,7 @@ npm i majidapi --save
 - **[DateTime](#DateTime)**
 - **[Drug information](#Drug-information)**
 - **[Crypto News](#Crypto-News)**
+- **[Farsroid](#Farsroid)**
 
 ## Instagram
 
@@ -95,8 +96,15 @@ instagram({
 ```javascript
 const {gpt} = require("majidapi/modules/ai");
 
+// GPT 3
+gpt({
+    model: "3",
+    question: "hello how are you?"
+}).then(console.log);
+
 // GPT 3.5 turbo
 gpt({
+    model: "3.5",
     question: "hello how are you?"
 }).then(console.log);
 ```
@@ -743,4 +751,25 @@ const {image} = require("majidapi/modules/ai");
 image({
     prompt: "a cute cat"
 }).then(console.log);
+```
+
+## Farsroid
+
+```javascript
+const {farsroid} = require("majidapi/modules/farsroid");
+
+// Search
+farsroid({
+    method: "search",
+    search: "AI",
+    page: 1
+}).then(console.log);
+
+// Download
+farsroid({
+    method: "download",
+    url: "The url you got from the previous method"
+}).then(console.log);
+
+
 ```

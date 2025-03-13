@@ -2,9 +2,13 @@ const config = require("./config");
 const axios = require("axios");
 
 module.exports = {
-    gpt: ({question = ""}) => {
+    gpt: ({model = "3", question = ""}) => {
+        let url = `${config.api}/gpt/3?q=${encodeURI(question)}`;
+        if (model !== "3") {
+            url = `${config.api}/gpt/35?q=${encodeURI(question)}`
+        }
         return new Promise(resolve => {
-            axios.get(`${config.api}/gpt/3?q=${encodeURI(question)}`)
+            axios.get(url)
                 .then(r => {
                     config.success(resolve, r);
                 })

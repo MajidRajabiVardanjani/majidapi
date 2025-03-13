@@ -13,5 +13,6 @@ module.exports = {
     video: require("./modules/video"),
     myket: require("./modules/myket"),
     dictionary: require("./modules/dictionary"),
-    drug: require("./modules/drug")
+    drug: require("./modules/drug"),
+    farsroid: require("./modules/farsroid")
 }
