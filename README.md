@@ -54,6 +54,8 @@ npm i majidapi --save
 - **[Drug information](#Drug-information)**
 - **[Crypto News](#Crypto-News)**
 - **[Farsroid](#Farsroid)**
+- **[Tabir Khab](#Tabir-Khab)**
+- **[Cooking](#Cooking)**
 
 ## Instagram
 
@@ -770,6 +772,39 @@ farsroid({
     method: "download",
     url: "The url you got from the previous method"
 }).then(console.log);
+```
 
+## Tabir Khab
 
+```javascript
+const {tabirKhab} = require("majidapi/modules/fun");
+
+// Tabir Khab
+tabirKhab({
+    word: "مار"
+}).then(console.log);
+```
+
+## Cooking
+
+```javascript
+const {cooking} = require("majidapi/modules/fun");
+
+// Home
+cooking({
+    method: "home",
+    page: 1
+}).then(console.log);
+
+// Search
+cooking({
+    method: "search",
+    search: "سوخاری"
+}).then(console.log);
+
+// Info
+cooking({
+    method: "info",
+    url: "The url you got from the previous method"
+}).then(console.log);
 ```
