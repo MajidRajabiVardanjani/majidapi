@@ -27,5 +27,16 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    stt: ({audioURL = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/ai/stt?url=${audioURL}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

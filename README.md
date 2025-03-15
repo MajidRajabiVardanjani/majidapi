@@ -17,6 +17,7 @@ npm i majidapi --save
 - **[Instagram](#Instagram)**
 - **[GPT](#GPT)**
 - **[Text To Speech](#Text-To-Speech)**
+- **[Speech To Text](#Speech-To-Text)**
 - **[AI Image Generator](#AI-Image-Generator)**
 - **[TikTok](#TikTok)**
 - **[Pinterest](#Pinterest)**
@@ -806,5 +807,16 @@ cooking({
 cooking({
     method: "info",
     url: "The url you got from the previous method"
+}).then(console.log);
+```
+
+## Speech To Text
+
+```javascript
+const {stt} = require("majidapi/modules/ai");
+
+// STT
+stt({
+    audioURL: "MP3 URL ..."
 }).then(console.log);
 ```
