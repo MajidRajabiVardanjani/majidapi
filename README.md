@@ -15,6 +15,7 @@ npm i majidapi --save
 ## List of APIs:
 
 - **[Instagram](#Instagram)**
+- **[Facebook](#Facebook)**
 - **[GPT](#GPT)**
 - **[Text To Speech](#Text-To-Speech)**
 - **[Speech To Text](#Speech-To-Text)**
@@ -57,6 +58,7 @@ npm i majidapi --save
 - **[Farsroid](#Farsroid)**
 - **[Tabir Khab](#Tabir-Khab)**
 - **[Cooking](#Cooking)**
+- **[BirthDate](#BirthDate)**
 
 ## Instagram
 
@@ -818,5 +820,29 @@ const {stt} = require("majidapi/modules/ai");
 // STT
 stt({
     audioURL: "MP3 URL ..."
+}).then(console.log);
+```
+
+## BirthDate
+
+```javascript
+const {birthDate} = require("majidapi/modules/fun");
+
+// BithDate Info
+birthDate({
+    year: "1380",
+    month: "01",
+    day: "01"
+}).then(console.log);
+```
+
+## Facebook
+
+```javascript
+const {facebook} = require("majidapi/modules/social");
+
+// Download video
+facebook({
+    url: "The facebook video url"
 }).then(console.log);
 ```

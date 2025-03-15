@@ -56,5 +56,17 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+
+    birthDate: ({year = "1380", month = "01", day = "01"}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/fun/birthdate?year=${year}&month=${month}&day=${day}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }
