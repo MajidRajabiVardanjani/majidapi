@@ -59,6 +59,7 @@ npm i majidapi --save
 - **[Tabir Khab](#Tabir-Khab)**
 - **[Cooking](#Cooking)**
 - **[BirthDate](#BirthDate)**
+- **[Football360](#Football360)**
 
 ## Instagram
 
@@ -844,5 +845,39 @@ const {facebook} = require("majidapi/modules/social");
 // Download video
 facebook({
     url: "The facebook video url"
+}).then(console.log);
+```
+
+## Football360
+
+```javascript
+const {football360} = require("majidapi/modules/sport");
+
+// List of competitions
+football360({
+    method: "competitions"
+}).then(console.log);
+
+// Competition info
+football360({
+    method: "competition",
+    id: "The ID you got from the previous method"
+}).then(console.log);
+
+// Posts
+football360({
+    method: "posts",
+    page: 1
+}).then(console.log);
+
+// Post
+football360({
+    method: "post",
+    id: "The ID you got from the previous method"
+}).then(console.log);
+
+// Live results
+football360({
+    method: "live"
 }).then(console.log);
 ```

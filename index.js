@@ -14,5 +14,6 @@ module.exports = {
     myket: require("./modules/myket"),
     dictionary: require("./modules/dictionary"),
     drug: require("./modules/drug"),
-    farsroid: require("./modules/farsroid")
+    farsroid: require("./modules/farsroid"),
+    sport: require("./modules/sport")
 }
