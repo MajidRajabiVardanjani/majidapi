@@ -12,5 +12,16 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    footballi: ({method = "competitions", cursor = 1, id = "",}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/footballi?action=${method}&cursor=${cursor}&id=${id}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

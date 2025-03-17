@@ -60,6 +60,10 @@ npm i majidapi --save
 - **[Cooking](#Cooking)**
 - **[BirthDate](#BirthDate)**
 - **[Football360](#Football360)**
+- **[Font](#Font)**
+- **[General Information](#General-Information)**
+- **[Pinglish To Farsi](#Pinglish-To-Farsi)**
+- **[Footballi](#Footballi)**
 
 ## Instagram
 
@@ -879,5 +883,66 @@ football360({
 // Live results
 football360({
     method: "live"
+}).then(console.log);
+```
+
+## Font
+
+```javascript
+const {font} = require("majidapi/modules/fun");
+
+// Font
+font({
+    lang: "en", // en | fa
+    text: "MajidAPI"
+}).then(console.log);
+```
+
+## General Information
+
+```javascript
+const {generalInformation} = require("majidapi/modules/fun");
+
+// General Information
+generalInformation().then(console.log);
+```
+
+## Pinglish To Farsi
+
+```javascript
+const {pinglish2farsi} = require("majidapi/modules/tools");
+
+//  Pinglish To Farsi
+pinglish2farsi({
+    text: "Salam khoobi?"
+}).then(console.log);
+```
+
+## Footballi
+
+```javascript
+const {footballi} = require("majidapi/modules/sport");
+
+// List of competitions
+footballi({
+    method: "competitions"
+}).then(console.log);
+
+// Competition info
+footballi({
+    method: "competition",
+    id: "The ID you got from the previous method"
+}).then(console.log);
+
+// News list
+footballi({
+    method: "news",
+    cusrot: ""
+}).then(console.log);
+
+// News Info
+footballi({
+    method: "info",
+    id: "The ID you got from the previous method"
 }).then(console.log);
 ```

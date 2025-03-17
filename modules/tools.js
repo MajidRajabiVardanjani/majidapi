@@ -79,5 +79,16 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    pinglish2farsi: ({text = "salam"}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/tools/pinglish2farsi?text=${text}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

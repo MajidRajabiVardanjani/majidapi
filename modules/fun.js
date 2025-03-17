@@ -68,5 +68,36 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    font: (lang = "en", text = "MajidAPI") => {
+        let url = `${config.api}/fun/font`;
+        if (lang === "en") {
+            url = `${url}/en`;
+        } else {
+            url = `${url}/fa`;
+        }
+        url = `${url}?text=${text}`;
+
+        return new Promise(resolve => {
+            axios.get(url)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+
+    generalInformation: () => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/fun/general-information`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }
