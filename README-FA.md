@@ -1,6 +1,6 @@
-# MajidAPI - Majid WebService
+# MajidAPI - وب سرویس مجید
 
-# Install
+# نصب
 
 ```bash
 npm i majidapi --save
@@ -14,7 +14,7 @@ npm i majidapi --save
 
 #### [پشتیبانی تلگرام](https://t.me/MajidRajabi1379)
 
-## List of APIs:
+## لیست وب سرویس ها:
 
 - **[اینستاگرام](#اینستاگرام)**
 - **[فیسبوک](#فیسبوک)**
