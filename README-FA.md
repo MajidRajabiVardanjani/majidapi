@@ -77,31 +77,31 @@ npm i majidapi --save
 ```javascript
 const {instagram} = require("majidapi/modules/social");
 
-// Download with link
+// دانلود با لینک
 instagram({
     method: "download",
     url: "(Post-Reels-Story-Profile-Highlight) URL"
 }).then(console.log);
 
-// Download profile
+// دریافت پروفایل
 instagram({
     method: "profile",
     username: "instagram"
 }).then(console.log);
 
-// Download stories
+// دریافت استوری ها
 instagram({
     method: "stories",
     username: "instagram"
 }).then(console.log);
 
-// Download highlights
+// دریافت هایلایت ها
 instagram({
     method: "highlights",
     username: "instagram"
 }).then(console.log);
 
-// Download highlight
+// دریافت هایلایت
 instagram({
     method: "highlight",
     highlightId: "highlight:id"
@@ -113,19 +113,19 @@ instagram({
 ```javascript
 const {gpt} = require("majidapi/modules/ai");
 
-// GPT 3
+// ورژن 3
 gpt({
     model: "3",
     question: "hello how are you?"
 }).then(console.log);
 
-// GPT 3.5 turbo
+// ورژن 3.5 turbo
 gpt({
     model: "3.5",
     question: "hello how are you?"
 }).then(console.log);
 
-// GPT Evil
+// شیطانی
 gpt({
     model: "evil",
     question: "hello how are you?"
@@ -137,7 +137,7 @@ gpt({
 ```javascript
 const {tts} = require("majidapi/modules/tools");
 
-// Text To Speech
+// متن به گفتار
 tts({
     gender: "woman", // woman - man
     text: "Your text ..."
@@ -149,13 +149,13 @@ tts({
 ```javascript
 const {tiktok} = require("majidapi/modules/social");
 
-// Download
+// دانلود
 tiktok({
     method: "download",
     url: "TikTok url ..."
 }).then(console.log);
 
-// Profile
+// پروفایل
 tiktok({
     method: "profile",
     username: "Username of TikTok user"
@@ -167,7 +167,7 @@ tiktok({
 ```javascript
 const {numberBook} = require("majidapi/modules/inquiry");
 
-// Number Book
+// شماره یاب
 numberBook({
     phoneNumber: "mobile number"
 }).then(console.log);
@@ -179,16 +179,15 @@ numberBook({
 ```javascript
 const {card, sheba} = require("majidapi/modules/inquiry");
 
-// Card number inquiry
+// استعلام شماره کارت
 card({
     cardNumber: "16-digit card number"
 }).then(console.log);
 
-// Sheba number inquiry
+// استعلام شماره شبا
 sheba({
     sheba: "IR000000000000000000000000"
 }).then(console.log);
-
 ```
 
 ## دیجی کالا
@@ -196,31 +195,31 @@ sheba({
 ```javascript
 const {digikala} = require("majidapi/modules/shopping");
 
-// Home
+// صفحه اصلی
 digikala({
     method: "home"
 }).then(console.log);
 
-// Categories
+// دسته بندی ها
 digikala({
     method: "categories"
 }).then(console.log);
 
-// Receive by category
+// دریافت دسته بندی
 digikala({
     method: "category",
     categoryId: "1",
     page: 1
 }).then(console.log);
 
-// Search
+// جستجو
 digikala({
     method: "search",
     search: "s25", // product name
     page: 1
 }).then(console.log);
 
-// Product specifications
+// مشخصات محصول
 digikala({
     method: "product",
     productId: "Product ID"
@@ -232,26 +231,26 @@ digikala({
 ```javascript
 const {torob} = require("majidapi/modules/shopping");
 
-// Categories
+// دسته بندی ها
 torob({
     method: "categories"
 }).then(console.log);
 
-// Receive by category
+// دریافت دسته بندی
 torob({
     method: "category",
     categoryId: "1",
     page: 1
 }).then(console.log);
 
-// Search
+// جستجو
 torob({
     method: "search",
     search: "s25", // product name
     page: 1
 }).then(console.log);
 
-// Product specifications
+// مشخصات محصول
 torob({
     method: "product",
     productId: "Product ID"
@@ -263,25 +262,25 @@ torob({
 ```javascript
 const {akharinKhabar} = require("majidapi/modules/news");
 
-// Categories
+// دسته بندی ها
 akharinKhabar({
     method: "categories"
 }).then(console.log);
 
-// Receive by category
+// دریافت دسته بندی
 akharinKhabar({
     method: "category",
     categoryId: "0",
     page: 1
 }).then(console.log);
 
-// Latest news
+// آخرین اخبار
 akharinKhabar({
     method: "latest",
     page: 1
 }).then(console.log);
 
-// Description of the news
+// شرح خبر
 akharinKhabar({
     method: "details",
     newsId: "News ID"
@@ -293,30 +292,30 @@ akharinKhabar({
 ```javascript
 const {filmRail} = require("majidapi/modules/movie");
 
-// Home page information
+// صفحه اصلی
 filmRail({
     method: "home"
 }).then(console.log);
 
-// Get the list of movies
+// دریافت لیست فیلم ها
 filmRail({
     method: "movies",
     page: 1
 }).then(console.log);
 
-// Get the list of series
+// دریافت لیست سریال ها
 filmRail({
     method: "series",
     page: 1
 }).then(console.log);
 
-// Search for movies and series
+// جستجوی فیلم و سریال
 filmRail({
     method: "search",
     search: "The name of the movie or series"
 }).then(console.log);
 
-// Specifications and download
+// اطلاعات بیشتر و دانلود
 filmRail({
     method: "details",
     id: "Movie ID"
@@ -328,38 +327,38 @@ filmRail({
 ```javascript
 const {melodify} = require("majidapi/modules/music");
 
-// The latest
+// آخرین
 melodify({
     method: "newest",
     page: 1
 }).then(console.log);
 
-// Mixes
+// میکس ها
 melodify({
     method: "mix",
     page: 1
 }).then(console.log);
 
-// The most popular
+// محبوب ها
 melodify({
     method: "popular",
     page: 1
 }).then(console.log);
 
-// Instagram trends
+// ترند های اینستاگرام
 melodify({
     method: "instatrend",
     page: 1
 }).then(console.log);
 
-// Song search
+// جستجو
 melodify({
     method: "search",
     search: "song name",
     page: 1
 }).then(console.log);
 
-// Download
+// دانلود
 melodify({
     method: "download",
     trackId: "Track ID",
@@ -372,7 +371,7 @@ melodify({
 ```javascript
 const {bonbast} = require("majidapi/modules/price");
 
-// Bonbast
+// نرخ ارز
 bonbast().then(console.log);
 ```
 
@@ -381,7 +380,7 @@ bonbast().then(console.log);
 ```javascript
 const {gold} = require("majidapi/modules/price");
 
-// Gold
+// قیمت طلا
 gold().then(console.log);
 ```
 
@@ -390,7 +389,7 @@ gold().then(console.log);
 ```javascript
 const {mobile} = require("majidapi/modules/price");
 
-// Mobile
+// قیمت موبایل
 mobile({
     model: "s25"
 }).then(console.log);
@@ -401,12 +400,12 @@ mobile({
 ```javascript
 const {tempMail} = require("majidapi/modules/tools");
 
-// Create a new email
+// ساخت ایمیل جدید
 tempMail({
     method: "new"
 }).then(console.log);
 
-// Receive messages
+// دریافت ایمیل ها
 tempMail({
     method: "messages",
     email: "The email address you got from the 'new' method"
@@ -418,7 +417,7 @@ tempMail({
 ```javascript
 const {spotify} = require("majidapi/modules/music");
 
-// Download from Spotify
+// دانلود از اسپاتیفای
 spotify({
     url: "https://open.spotify.com/track/...",
     out: "track.mp3"
@@ -430,12 +429,12 @@ spotify({
 ```javascript
 const {car} = require("majidapi/modules/price");
 
-// Price list
+// لیست قیمت
 car({
     method: "list"
 }).then(console.log);
 
-// Get the description
+// مشخصات
 car({
     method: "info",
     id: "Car ID"
@@ -447,7 +446,7 @@ car({
 ```javascript
 const {bitpin} = require("majidapi/modules/price");
 
-// Get rates
+// دریافت نرخ ها
 bitpin().then(console.log);
 ```
 
@@ -456,9 +455,9 @@ bitpin().then(console.log);
 ```javascript
 const {qrcode} = require("majidapi/modules/tools");
 
-// QRCode
+// ساخت کیوآرکد
 qrcode({
-    text: "Hello",
+    text: "مجید",
     size: 512,
     out: "qrcode.png"
 }).then(console.log);
@@ -469,13 +468,13 @@ qrcode({
 ```javascript
 const {pinterest} = require("majidapi/modules/social");
 
-// Search
+// جستجو
 pinterest({
     method: "search",
     search: "Mobile"
 }).then(console.log);
 
-// Download Video
+// دانلود
 pinterest({
     method: "download",
     url: "https://pin.it/..."
@@ -487,7 +486,7 @@ pinterest({
 ```javascript
 const {googleTranslate} = require("majidapi/modules/tools");
 
-// Translate
+// ترجمه
 googleTranslate({
     text: "سلام",
     to: "en"
@@ -499,8 +498,9 @@ googleTranslate({
 ```javascript
 const {fal} = require("majidapi/modules/fun");
 
+// فال
 fal({
-    type: "text" // text or photo
+    type: "text" // text یا photo
 }).then(console.log);
 ```
 
@@ -509,6 +509,7 @@ fal({
 ```javascript
 const {joke} = require("majidapi/modules/fun");
 
+// جوک
 joke().then(console.log);
 ```
 
@@ -517,7 +518,7 @@ joke().then(console.log);
 ```javascript
 const {ePhoto} = require("majidapi/modules/image");
 
-// Making a logo
+// ساخت لوگو
 ePhoto({
     text: "MajidAPI",
     out: "logo.jpg"
@@ -529,7 +530,7 @@ ePhoto({
 ```javascript
 const {x} = require("majidapi/modules/social");
 
-// Download
+// دانلود
 x({
     videoUrl: "x.com video url"
 }).then(console.log);
@@ -540,13 +541,13 @@ x({
 ```javascript
 const {googlePlay} = require("majidapi/modules/googlePlay");
 
-// Search
+// جستجو
 googlePlay({
     method: "search",
     search: "vpn"
 }).then(console.log);
 
-// Download
+// دانلود
 googlePlay({
     method: "download",
     search: "Google play app url"
@@ -558,30 +559,30 @@ googlePlay({
 ```javascript
 const {aparat} = require("majidapi/modules/vide");
 
-// Home
+// صفحه اصلی
 aparat({
     method: "home"
 }).then(console.log);
 
-// Categories
+// دسته بندی ها
 aparat({
     method: "categories"
 }).then(console.log);
 
-// Category
+// دریافت دسته بندی
 aparat({
     method: "category",
     catid: "Category ID",
     page: 1
 }).then(console.log);
 
-// Search
+// جستجو
 aparat({
     method: "search",
     search: "Music"
 }).then(console.log);
 
-// Info & Download
+// اطلاعات بیشتر و دانلود
 aparat({
     method: "download",
     uid: "Video ID (uid)"
@@ -593,7 +594,7 @@ aparat({
 ```javascript
 const {weather} = require("majidapi/modules/tools");
 
-// Weather
+// هواشناسی
 weather({
     city: "tehran"
 }).then(console.log);
@@ -604,13 +605,13 @@ weather({
 ```javascript
 const {myket} = require("majidapi/modules/myket");
 
-// Search
+// جستجو
 myket({
     method: "search",
     search: "App Name"
 }).then(console.log);
 
-// Info & Download
+// مشخصات و دانلود
 myket({
     method: "info",
     packageName: "App Package Name"
@@ -622,7 +623,7 @@ myket({
 ```javascript
 const {captcha} = require("majidapi/modules/tools");
 
-// Captcha generation
+// تولید کپچا
 captcha({
     length: 10
 }).then(console.log);
@@ -633,19 +634,19 @@ captcha({
 ```javascript
 const {soundCloud} = require("majidapi/modules/music");
 
-// Search
+// جستجو
 soundCloud({
     method: "search",
     search: "Shayea"
 }).then(console.log);
 
-// Info
+// مشخصات
 soundCloud({
     method: "info",
     url: "https://soundcloud.com/aslistream/too-ragi"
 }).then(console.log);
 
-// Info
+// دانلود
 soundCloud({
     method: "download",
     url: "https://soundcloud.com/aslistream/too-ragi"
@@ -657,31 +658,31 @@ soundCloud({
 ```javascript
 const {mopon} = require("majidapi/modules/shopping");
 
-// Home
+// صفحه اصلی
 mopon({
     method: "home"
 }).then(console.log);
 
-// Categories
+// دسته بندی ها
 mopon({
     method: "categories"
 }).then(console.log);
 
-// Category
+// دریافت دسته بندی
 mopon({
     method: "category",
     id: "zQoGQ",
     page: 1
 }).then(console.log);
 
-// Search
+// جستجو
 mopon({
     method: "search",
     search: "دیجی کالا",
     page: 1
 }).then(console.log);
 
-// Info
+// مشخصات
 mopon({
     method: "info",
     id: "brkmG"
@@ -693,7 +694,7 @@ mopon({
 ```javascript
 const {dehkhoda} = require("majidapi/modules/dictionary");
 
-// Dehkhoda
+// دهخدا
 dehkhoda({
     word: "مجید"
 }).then(console.log);
@@ -704,7 +705,7 @@ dehkhoda({
 ```javascript
 const {names} = require("majidapi/modules/dictionary");
 
-// Names
+// فرهنگ نام ها
 names({
     name: "مجید"
 }).then(console.log);
@@ -715,7 +716,7 @@ names({
 ```javascript
 const {estekhareh} = require("majidapi/modules/fun");
 
-// Estekhareh
+// استخاره
 estekhareh().then(console.log);
 ```
 
@@ -724,7 +725,7 @@ estekhareh().then(console.log);
 ```javascript
 const {dateTime} = require("majidapi/modules/tools");
 
-// Date & Time
+// تاریخ و ساعت
 dateTime({
     timeZone: "Asia/Tehran"
 }).then(console.log);
@@ -735,13 +736,13 @@ dateTime({
 ```javascript
 const {darooyab} = require("majidapi/modules/drug");
 
-// Search
+// جستجو
 darooyab({
     method: "search",
     search: "ملاتونین"
 }).then(console.log);
 
-// Info
+// مشخصات
 darooyab({
     method: "info",
     url: "The link you got from the search method"
@@ -753,13 +754,13 @@ darooyab({
 ```javascript
 const {crypto} = require("majidapi/modules/news");
 
-// List
+// لیست
 crypto({
     method: "list",
     page: 1
 }).then(console.log);
 
-// Info
+// شرح خبر
 crypto({
     method: "info",
     link: "The link you got from the search method"
@@ -771,7 +772,7 @@ crypto({
 ```javascript
 const {image} = require("majidapi/modules/ai");
 
-// Text To Image
+// تبدیل متن به عکس
 image({
     prompt: "a cute cat"
 }).then(console.log);
@@ -782,14 +783,14 @@ image({
 ```javascript
 const {farsroid} = require("majidapi/modules/farsroid");
 
-// Search
+// جستجو
 farsroid({
     method: "search",
     search: "AI",
     page: 1
 }).then(console.log);
 
-// Download
+// دانلود
 farsroid({
     method: "download",
     url: "The url you got from the previous method"
@@ -801,7 +802,7 @@ farsroid({
 ```javascript
 const {tabirKhab} = require("majidapi/modules/fun");
 
-// Tabir Khab
+// تعبیر خواب
 tabirKhab({
     word: "مار"
 }).then(console.log);
@@ -812,19 +813,19 @@ tabirKhab({
 ```javascript
 const {cooking} = require("majidapi/modules/fun");
 
-// Home
+// صفحه اصلی
 cooking({
     method: "home",
     page: 1
 }).then(console.log);
 
-// Search
+// جستجو
 cooking({
     method: "search",
     search: "سوخاری"
 }).then(console.log);
 
-// Info
+// اطلاعات بیشتر
 cooking({
     method: "info",
     url: "The url you got from the previous method"
@@ -836,7 +837,7 @@ cooking({
 ```javascript
 const {stt} = require("majidapi/modules/ai");
 
-// STT
+// تبدیل ویس به متن
 stt({
     audioURL: "MP3 URL ..."
 }).then(console.log);
@@ -847,7 +848,7 @@ stt({
 ```javascript
 const {birthDate} = require("majidapi/modules/fun");
 
-// BithDate Info
+// اطلاعات تاریخ تولد
 birthDate({
     year: "1380",
     month: "01",
@@ -860,7 +861,7 @@ birthDate({
 ```javascript
 const {facebook} = require("majidapi/modules/social");
 
-// Download video
+// دانلود ویدیو
 facebook({
     url: "The facebook video url"
 }).then(console.log);
@@ -871,30 +872,30 @@ facebook({
 ```javascript
 const {football360} = require("majidapi/modules/sport");
 
-// List of competitions
+// لیست مسابقات
 football360({
     method: "competitions"
 }).then(console.log);
 
-// Competition info
+// اطلاعات مسابقه
 football360({
     method: "competition",
     id: "The ID you got from the previous method"
 }).then(console.log);
 
-// Posts
+// پست ها
 football360({
     method: "posts",
     page: 1
 }).then(console.log);
 
-// Post
+// پست
 football360({
     method: "post",
     id: "The ID you got from the previous method"
 }).then(console.log);
 
-// Live results
+// نتایج زنده
 football360({
     method: "live"
 }).then(console.log);
@@ -905,7 +906,7 @@ football360({
 ```javascript
 const {font} = require("majidapi/modules/fun");
 
-// Font
+// ساخت فونت
 font({
     lang: "en", // en | fa
     text: "MajidAPI"
@@ -917,7 +918,7 @@ font({
 ```javascript
 const {generalInformation} = require("majidapi/modules/fun");
 
-// General Information
+// دانستنی
 generalInformation().then(console.log);
 ```
 
@@ -926,7 +927,7 @@ generalInformation().then(console.log);
 ```javascript
 const {pinglish2farsi} = require("majidapi/modules/tools");
 
-//  Pinglish To Farsi
+//  تبدیل فینگلیش به فارسی
 pinglish2farsi({
     text: "Salam khoobi?"
 }).then(console.log);
@@ -937,24 +938,24 @@ pinglish2farsi({
 ```javascript
 const {footballi} = require("majidapi/modules/sport");
 
-// List of competitions
+// لیست مسابقات
 footballi({
     method: "competitions"
 }).then(console.log);
 
-// Competition info
+// دریافت مسایقه
 footballi({
     method: "competition",
     id: "The ID you got from the previous method"
 }).then(console.log);
 
-// News list
+// لیست اخبار
 footballi({
     method: "news",
     cusrot: ""
 }).then(console.log);
 
-// News Info
+// شرح خبر
 footballi({
     method: "info",
     id: "The ID you got from the previous method"
@@ -966,7 +967,7 @@ footballi({
 ```javascript
 const {removeBackground} = require("majidapi/modules/image");
 
-// Remove Background
+// حذف پس زمینه
 removeBackground({
     imageURL: "The photo url",
     out: "rm-bg.jpg"
@@ -978,7 +979,7 @@ removeBackground({
 ```javascript
 const {hadith} = require("majidapi/modules/fun");
 
-// Hadith
+// حدیث
 hadith().then(console.log);
 ```
 
@@ -987,7 +988,7 @@ hadith().then(console.log);
 ```javascript
 const {sokhan} = require("majidapi/modules/fun");
 
-// Sokhan Bozorgan
+// سخن بزرگان
 sokhan().then(console.log);
 ```
 
@@ -996,7 +997,7 @@ sokhan().then(console.log);
 ```javascript
 const {panapa} = require("majidapi/modules/fun");
 
-// Pa Na Pa
+// پ ن پ
 panapa().then(console.log);
 ```
 
@@ -1005,6 +1006,6 @@ panapa().then(console.log);
 ```javascript
 const {bio} = require("majidapi/modules/fun");
 
-// Bio Farsi
+// بیو فارسی
 bio().then(console.log);
 ```

@@ -645,7 +645,7 @@ soundCloud({
     url: "https://soundcloud.com/aslistream/too-ragi"
 }).then(console.log);
 
-// Info
+// Download
 soundCloud({
     method: "download",
     url: "https://soundcloud.com/aslistream/too-ragi"
