@@ -99,5 +99,51 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
-    }
+    },
+
+    hadith: () => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/fun/hadith`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+    sokhan: () => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/fun/sokhan`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+    panapa: () => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/fun/panapa`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+    bio: () => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/fun/bio`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+
 }

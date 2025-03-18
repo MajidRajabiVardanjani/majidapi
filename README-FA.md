@@ -6,73 +6,73 @@
 npm i majidapi --save
 ```
 
-# [مستندات فارسی](README-FA.md)
+# [en documents](README.md)
 
-# [Website](https://majidapi.ir/)
+# [وبسایت](https://majidapi.ir/)
 
-## [Telegram](https://t.me/majidapi)
+## [تلگرام](https://t.me/majidapi)
 
-#### [Telegram Support](https://t.me/MajidRajabi1379)
+#### [پشتیبانی تلگرام](https://t.me/MajidRajabi1379)
 
 ## List of APIs:
 
-- **[Instagram](#Instagram)**
-- **[Facebook](#Facebook)**
-- **[GPT](#GPT)**
-- **[Text To Speech](#Text-To-Speech)**
-- **[Speech To Text](#Speech-To-Text)**
-- **[AI Image Generator](#AI-Image-Generator)**
-- **[TikTok](#TikTok)**
-- **[Pinterest](#Pinterest)**
-- **[Google Translate](#Google-Translate)**
-- **[NumberBook](#NumberBook)**
-- **[TempMail](#TempMail)**
-- **[Spotify](#Spotify)**
-- **[SoundCloud](#SoundCloud)**
-- **[X Downloader](#X-Downloader)**
-- **[Logo](#Logo)**
-- **[QRCode Creation](#QRCode-Creation)**
-- **[GooglePlay](#GooglePlay)**
-- **[Card number inquiry](#Card-number-inquiry)**
-- **[Digikala](#Digikala)**
-- **[Torob](#Torob)**
-- **[AkharinKhabar](#AkharinKhabar)**
-- **[Movies and series FilmRail](#Movies-and-series-FilmRail)**
-- **[Melodify](#Melodify)**
-- **[Bonbast](#Bonbast)**
-- **[Gold Price](#Gold-Price)**
-- **[Mobile Price](#Mobile-Price)**
-- **[Car Price](#Car-Price)**
-- **[BitPin Crypto Currency Price](#BitPin-Crypto-Currency-Price)**
-- **[Fal](#Fal)**
-- **[Joke](#Joke)**
-- **[Aparat](#Aparat)**
-- **[Weather](#Weather)**
-- **[Myket](#Myket)**
-- **[Captcha](#Captcha)**
-- **[Mopon](#Mopon)**
-- **[Dictionary of Dehkhoda](#Dictionary-of-Dehkhoda)**
-- **[Dictionary of names](#Dictionary-of-names)**
-- **[Estekhareh](#Estekhareh)**
-- **[DateTime](#DateTime)**
-- **[Drug information](#Drug-information)**
-- **[Crypto News](#Crypto-News)**
-- **[Farsroid](#Farsroid)**
-- **[Tabir Khab](#Tabir-Khab)**
-- **[Cooking](#Cooking)**
-- **[BirthDate](#BirthDate)**
-- **[Football360](#Football360)**
-- **[Font](#Font)**
-- **[General Information](#General-Information)**
-- **[Pinglish To Farsi](#Pinglish-To-Farsi)**
-- **[Footballi](#Footballi)**
-- **[Remove Photo Background](#Remove-Photo-Background)**
-- **[Hadith](#Hadith)**
-- **[Sokhan](#Sokhan)**
-- **[PaNaPa](#PaNaPa)**
-- **[Bio](#Bio)**
+- **[اینستاگرام](#اینستاگرام)**
+- **[فیسبوک](#فیسبوک)**
+- **[جی پی تی](#جی-پی-تی)**
+- **[متن به گفتار](#متن-به-گفتار)**
+- **[گفتار به متن](#گفتار-به-متن)**
+- **[ساخت عکس با هوش مصنوعی](#ساخت-عکس-با-هوش-مصنوعی)**
+- **[تیک تاک](#تیک-تاک)**
+- **[پینترست](#پینترست)**
+- **[ترجمه گوگل](#ترجمه-گوگل)**
+- **[مزاحم یاب](#مزاحم-یاب)**
+- **[ایمیل فیک](#ایمیل-فیک)**
+- **[اسپاتیفای](#اسپاتیفای)**
+- **[ساوندکلاود](#ساوندکلاود)**
+- **[توییتر دانلودر](#توییتر-دانلودر)**
+- **[لوگو](#لوگو)**
+- **[ساخت کیوآرکد](#ساخت-کیوآرکد)**
+- **[گوگل پلی](#گوگل-پلی)**
+- **[استعلام شماره کارت](#استعلام-شماره-کارت)**
+- **[دیجی کالا](#دیجی-کالا)**
+- **[ترب](#ترب)**
+- **[آخرین خبر](#آخرین-خبر)**
+- **[فیلم و سریال فیلم ریل](#فیلم-و-سریال-فیلم-ریل)**
+- **[ملودیفای](#ملودیفای)**
+- **[بن بست](#بن-بست)**
+- **[قیمت طلا](#قیمت-طلا)**
+- **[قیمت موبایل](#قیمت-موبایل)**
+- **[قیمت خودرو](#قیمت-خودرو)**
+- **[نرخ ارز دیجیتال بیت پین](#نرخ-ارز-دیجیتال-بیت-پین)**
+- **[فال](#فال)**
+- **[جوک](#جوک)**
+- **[آپارات](#آپارات)**
+- **[آب و هوا](#آب-و-هوا)**
+- **[مایکت](#مایکت)**
+- **[کپچا](#کپچا)**
+- **[موپن](#موپن)**
+- **[لغت نامه دهخدا](#لغت-نامه-دهخدا)**
+- **[فرهنگ نام ها](#فرهنگ-نام-ها)**
+- **[استخاره](#استخاره)**
+- **[تاریخ و ساعت](#تاریخ-و-ساعت)**
+- **[اطلاعات دارویی](#اطلاعات-دارویی)**
+- **[اخبار کریپتو](#اخبار-کریپتو)**
+- **[فارسروید](#فارسروید)**
+- **[تعبیر خواب](#تعبیر-خواب)**
+- **[آشپزی](#آشپزی)**
+- **[اطلاعات تاریخ تولد](#اطلاعات-تاریخ-تولد)**
+- **[فوتبال360](#فوتبال360)**
+- **[فونت](#فونت)**
+- **[اطلاعات عمومی](#اطلاعات-عمومی)**
+- **[تبدیل پینگلیش به فارسی](#تبدیل-پینگلیش-به-فارسی)**
+- **[فوتبالی](#فوتبالی)**
+- **[حذف پس زمینه عکس](#حذف-پس-زمینه-عکس)**
+- **[حدیث](#حدیث)**
+- **[سخن بزرگان](#سخن-بزرگان)**
+- **[پ ن پ](#پ-ن-پ)**
+- **[بیو](#بیو)**
 
-## Instagram
+## اینستاگرام
 
 ```javascript
 const {instagram} = require("majidapi/modules/social");
@@ -108,7 +108,7 @@ instagram({
 }).then(console.log);
 ```
 
-## GPT
+## جی پی تی
 
 ```javascript
 const {gpt} = require("majidapi/modules/ai");
@@ -132,7 +132,7 @@ gpt({
 }).then(console.log);
 ```
 
-## Text To Speech
+## متن به گفتار
 
 ```javascript
 const {tts} = require("majidapi/modules/tools");
@@ -144,7 +144,7 @@ tts({
 }).then(console.log);
 ```
 
-## TikTok
+## تیک تاک
 
 ```javascript
 const {tiktok} = require("majidapi/modules/social");
@@ -162,7 +162,7 @@ tiktok({
 }).then(console.log);
 ```
 
-## NumberBook
+## مزاحم یاب
 
 ```javascript
 const {numberBook} = require("majidapi/modules/inquiry");
@@ -174,7 +174,7 @@ numberBook({
 
 ```
 
-## Card number inquiry
+## استعلام شماره کارت
 
 ```javascript
 const {card, sheba} = require("majidapi/modules/inquiry");
@@ -191,7 +191,7 @@ sheba({
 
 ```
 
-## Digikala
+## دیجی کالا
 
 ```javascript
 const {digikala} = require("majidapi/modules/shopping");
@@ -227,7 +227,7 @@ digikala({
 }).then(console.log);
 ```
 
-## Torob
+## ترب
 
 ```javascript
 const {torob} = require("majidapi/modules/shopping");
@@ -258,7 +258,7 @@ torob({
 }).then(console.log);
 ```
 
-## AkharinKhabar
+## آخرین خبر
 
 ```javascript
 const {akharinKhabar} = require("majidapi/modules/news");
@@ -288,7 +288,7 @@ akharinKhabar({
 }).then(console.log);
 ```
 
-## Movies and series FilmRail
+## فیلم و سریال فیلم ریل
 
 ```javascript
 const {filmRail} = require("majidapi/modules/movie");
@@ -323,7 +323,7 @@ filmRail({
 }).then(console.log);
 ```
 
-## Melodify
+## ملودیفای
 
 ```javascript
 const {melodify} = require("majidapi/modules/music");
@@ -367,7 +367,7 @@ melodify({
 }).then(console.log);
 ```
 
-## Bonbast
+## بن بست
 
 ```javascript
 const {bonbast} = require("majidapi/modules/price");
@@ -376,7 +376,7 @@ const {bonbast} = require("majidapi/modules/price");
 bonbast().then(console.log);
 ```
 
-## Gold Price
+## قیمت طلا
 
 ```javascript
 const {gold} = require("majidapi/modules/price");
@@ -385,7 +385,7 @@ const {gold} = require("majidapi/modules/price");
 gold().then(console.log);
 ```
 
-## Mobile Price
+## قیمت موبایل
 
 ```javascript
 const {mobile} = require("majidapi/modules/price");
@@ -396,7 +396,7 @@ mobile({
 }).then(console.log);
 ```
 
-## TempMail
+## ایمیل فیک
 
 ```javascript
 const {tempMail} = require("majidapi/modules/tools");
@@ -413,7 +413,7 @@ tempMail({
 }).then(console.log);
 ```
 
-## Spotify
+## اسپاتیفای
 
 ```javascript
 const {spotify} = require("majidapi/modules/music");
@@ -425,7 +425,7 @@ spotify({
 }).then(console.log);
 ```
 
-## Car Price
+## قیمت خودرو
 
 ```javascript
 const {car} = require("majidapi/modules/price");
@@ -442,7 +442,7 @@ car({
 }).then(console.log);
 ```
 
-## BitPin Crypto Currency Price
+## نرخ ارز دیجیتال بیت پین
 
 ```javascript
 const {bitpin} = require("majidapi/modules/price");
@@ -451,7 +451,7 @@ const {bitpin} = require("majidapi/modules/price");
 bitpin().then(console.log);
 ```
 
-## QRCode Creation
+## ساخت کیوآرکد
 
 ```javascript
 const {qrcode} = require("majidapi/modules/tools");
@@ -464,7 +464,7 @@ qrcode({
 }).then(console.log);
 ```
 
-## Pinterest
+## پینترست
 
 ```javascript
 const {pinterest} = require("majidapi/modules/social");
@@ -482,7 +482,7 @@ pinterest({
 }).then(console.log);
 ```
 
-## Google Translate
+## ترجمه گوگل
 
 ```javascript
 const {googleTranslate} = require("majidapi/modules/tools");
@@ -494,7 +494,7 @@ googleTranslate({
 }).then(console.log);
 ```
 
-## Fal
+## فال
 
 ```javascript
 const {fal} = require("majidapi/modules/fun");
@@ -504,7 +504,7 @@ fal({
 }).then(console.log);
 ```
 
-## Joke
+## جوک
 
 ```javascript
 const {joke} = require("majidapi/modules/fun");
@@ -512,7 +512,7 @@ const {joke} = require("majidapi/modules/fun");
 joke().then(console.log);
 ```
 
-## Logo
+## لوگو
 
 ```javascript
 const {ePhoto} = require("majidapi/modules/image");
@@ -524,7 +524,7 @@ ePhoto({
 }).then(console.log);
 ```
 
-## X Downloader
+## توییتر دانلودر
 
 ```javascript
 const {x} = require("majidapi/modules/social");
@@ -535,7 +535,7 @@ x({
 }).then(console.log);
 ```
 
-## GooglePlay
+## گوگل پلی
 
 ```javascript
 const {googlePlay} = require("majidapi/modules/googlePlay");
@@ -553,7 +553,7 @@ googlePlay({
 }).then(console.log);
 ```
 
-## Aparat
+## آپارات
 
 ```javascript
 const {aparat} = require("majidapi/modules/vide");
@@ -588,7 +588,7 @@ aparat({
 }).then(console.log);
 ```
 
-## Weather
+## آب و هوا
 
 ```javascript
 const {weather} = require("majidapi/modules/tools");
@@ -599,7 +599,7 @@ weather({
 }).then(console.log);
 ```
 
-## Myket
+## مایکت
 
 ```javascript
 const {myket} = require("majidapi/modules/myket");
@@ -617,7 +617,7 @@ myket({
 }).then(console.log);
 ```
 
-## Captcha
+## کپچا
 
 ```javascript
 const {captcha} = require("majidapi/modules/tools");
@@ -628,7 +628,7 @@ captcha({
 }).then(console.log);
 ```
 
-## SoundCloud
+## ساوندکلاود
 
 ```javascript
 const {soundCloud} = require("majidapi/modules/music");
@@ -652,7 +652,7 @@ soundCloud({
 }).then(console.log);
 ```
 
-## Mopon
+## موپن
 
 ```javascript
 const {mopon} = require("majidapi/modules/shopping");
@@ -688,7 +688,7 @@ mopon({
 }).then(console.log);
 ```
 
-## Dictionary of Dehkhoda
+## لغت نامه دهخدا
 
 ```javascript
 const {dehkhoda} = require("majidapi/modules/dictionary");
@@ -699,7 +699,7 @@ dehkhoda({
 }).then(console.log);
 ```
 
-## Dictionary of names
+## فرهنگ نام ها
 
 ```javascript
 const {names} = require("majidapi/modules/dictionary");
@@ -710,7 +710,7 @@ names({
 }).then(console.log);
 ```
 
-## Estekhareh
+## استخاره
 
 ```javascript
 const {estekhareh} = require("majidapi/modules/fun");
@@ -719,7 +719,7 @@ const {estekhareh} = require("majidapi/modules/fun");
 estekhareh().then(console.log);
 ```
 
-## DateTime
+## تاریخ و ساعت
 
 ```javascript
 const {dateTime} = require("majidapi/modules/tools");
@@ -730,7 +730,7 @@ dateTime({
 }).then(console.log);
 ```
 
-## Drug information
+## اطلاعات دارویی
 
 ```javascript
 const {darooyab} = require("majidapi/modules/drug");
@@ -748,7 +748,7 @@ darooyab({
 }).then(console.log);
 ```
 
-## Crypto News
+## اخبار کریپتو
 
 ```javascript
 const {crypto} = require("majidapi/modules/news");
@@ -766,7 +766,7 @@ crypto({
 }).then(console.log);
 ```
 
-## AI Image Generator
+## ساخت عکس با هوش مصنوعی
 
 ```javascript
 const {image} = require("majidapi/modules/ai");
@@ -777,7 +777,7 @@ image({
 }).then(console.log);
 ```
 
-## Farsroid
+## فارسروید
 
 ```javascript
 const {farsroid} = require("majidapi/modules/farsroid");
@@ -796,7 +796,7 @@ farsroid({
 }).then(console.log);
 ```
 
-## Tabir Khab
+## تعبیر خواب
 
 ```javascript
 const {tabirKhab} = require("majidapi/modules/fun");
@@ -807,7 +807,7 @@ tabirKhab({
 }).then(console.log);
 ```
 
-## Cooking
+## آشپزی
 
 ```javascript
 const {cooking} = require("majidapi/modules/fun");
@@ -831,7 +831,7 @@ cooking({
 }).then(console.log);
 ```
 
-## Speech To Text
+## گفتار به متن
 
 ```javascript
 const {stt} = require("majidapi/modules/ai");
@@ -842,7 +842,7 @@ stt({
 }).then(console.log);
 ```
 
-## BirthDate
+## اطلاعات تاریخ تولد
 
 ```javascript
 const {birthDate} = require("majidapi/modules/fun");
@@ -855,7 +855,7 @@ birthDate({
 }).then(console.log);
 ```
 
-## Facebook
+## فیسبوک
 
 ```javascript
 const {facebook} = require("majidapi/modules/social");
@@ -866,7 +866,7 @@ facebook({
 }).then(console.log);
 ```
 
-## Football360
+## فوتبال360
 
 ```javascript
 const {football360} = require("majidapi/modules/sport");
@@ -900,7 +900,7 @@ football360({
 }).then(console.log);
 ```
 
-## Font
+## فونت
 
 ```javascript
 const {font} = require("majidapi/modules/fun");
@@ -912,7 +912,7 @@ font({
 }).then(console.log);
 ```
 
-## General Information
+## اطلاعات عمومی
 
 ```javascript
 const {generalInformation} = require("majidapi/modules/fun");
@@ -921,7 +921,7 @@ const {generalInformation} = require("majidapi/modules/fun");
 generalInformation().then(console.log);
 ```
 
-## Pinglish To Farsi
+## تبدیل پینگلیش به فارسی
 
 ```javascript
 const {pinglish2farsi} = require("majidapi/modules/tools");
@@ -932,7 +932,7 @@ pinglish2farsi({
 }).then(console.log);
 ```
 
-## Footballi
+## فوتبالی
 
 ```javascript
 const {footballi} = require("majidapi/modules/sport");
@@ -961,7 +961,7 @@ footballi({
 }).then(console.log);
 ```
 
-## Remove Photo Background
+## حذف پس زمینه عکس
 
 ```javascript
 const {removeBackground} = require("majidapi/modules/image");
@@ -973,7 +973,7 @@ removeBackground({
 }).then(console.log);
 ```
 
-## Hadith
+## حدیث
 
 ```javascript
 const {hadith} = require("majidapi/modules/fun");
@@ -982,7 +982,7 @@ const {hadith} = require("majidapi/modules/fun");
 hadith().then(console.log);
 ```
 
-## Sokhan
+## سخن بزرگان
 
 ```javascript
 const {sokhan} = require("majidapi/modules/fun");
@@ -991,7 +991,7 @@ const {sokhan} = require("majidapi/modules/fun");
 sokhan().then(console.log);
 ```
 
-## PaNaPa
+## پ ن پ
 
 ```javascript
 const {panapa} = require("majidapi/modules/fun");
@@ -1000,7 +1000,7 @@ const {panapa} = require("majidapi/modules/fun");
 panapa().then(console.log);
 ```
 
-## Bio
+## بیو
 
 ```javascript
 const {bio} = require("majidapi/modules/fun");
