@@ -90,5 +90,27 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    proxyList: ({protocol = "socks5"}) => {
+        return new Promise(resolve => {
+            axios.get(`https://api.majidapi.ir/tools/proxy?protocol=${protocol}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+    screenShot: ({url = "", width = 1280, height = 2000, out = "shot.jpg"}) => {
+        return new Promise(resolve => {
+            config.downloadFile(`${config.api}/tools/screenshot?url=${encodeURI(url)}&width=${width}&height=${height}`, out)
+                .then(r => {
+                    resolve(r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

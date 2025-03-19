@@ -71,6 +71,10 @@ npm i majidapi --save
 - **[سخن بزرگان](#سخن-بزرگان)**
 - **[پ ن پ](#پ-ن-پ)**
 - **[بیو](#بیو)**
+- **[دیوان حافظ](#دیوان-حافظ)**
+- **[پروکسی لیست](#پروکسی-لیست)**
+- **[داستان](#داستان)**
+- **[اسکرین شات از وبسایت](#اسکرین-شات-از-وبسایت)**
 
 ## اینستاگرام
 
@@ -1008,4 +1012,54 @@ const {bio} = require("majidapi/modules/fun");
 
 // بیو فارسی
 bio().then(console.log);
+```
+
+## دیوان حافظ
+
+```javascript
+const {divanHafez} = require("majidapi/modules/fun");
+
+// جستجو
+divanHafez({
+    search: "الا یا"
+}).then(console.log);
+
+// بر اساس شماره غزل
+divanHafez({
+    no: 1 // 1 - 495
+}).then(console.log);
+```
+
+## پروکسی لیست
+
+```javascript
+const {proxyList} = require("majidapi/modules/tools");
+
+// لیست
+proxyList({
+    protocol: "socks5" // socks5 - socks4
+}).then(console.log);
+```
+
+## داستان
+
+```javascript
+const {story} = require("majidapi/modules/fun");
+
+// Story
+story().then(console.log);
+```
+
+## اسکرین شات از وبسایت
+
+```javascript
+const {screenShot} = require("majidapi/modules/tools");
+
+// اسکرین شات
+screenShot({
+    url: "https://majidapi.ir",
+    width: 1280,
+    height: 2000,
+    out: "shot.jpg"
+}).then(console.log);
 ```

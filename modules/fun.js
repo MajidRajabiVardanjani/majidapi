@@ -146,4 +146,35 @@ module.exports = {
         })
     },
 
+    divanHafez: ({search = "", no = 1}) => {
+        let url = `${config.api}/fun/divan-hafez`;
+
+        if (search !== "") {
+            url = `${url}?s=${encodeURI(search)}`;
+        } else {
+            url = `${url}?no=${no}`;
+        }
+        return new Promise(resolve => {
+            axios.get(url)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(err);
+                });
+        })
+    },
+
+    story: () => {
+        return new Promise(resolve => {
+            axios.get(`https://api.majidapi.ir/fun/dastan`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    }
+
 }

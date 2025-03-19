@@ -71,6 +71,10 @@ npm i majidapi --save
 - **[Sokhan](#Sokhan)**
 - **[PaNaPa](#PaNaPa)**
 - **[Bio](#Bio)**
+- **[Divan Hafez](#Divan-Hafez)**
+- **[Proxy List](#Proxy-List)**
+- **[Story](#Story)**
+- **[Website ScreenShot](#Website-ScreenShot)**
 
 ## Instagram
 
@@ -1007,4 +1011,54 @@ const {bio} = require("majidapi/modules/fun");
 
 // Bio Farsi
 bio().then(console.log);
+```
+
+## Divan Hafez
+
+```javascript
+const {divanHafez} = require("majidapi/modules/fun");
+
+// Search
+divanHafez({
+    search: "الا یا"
+}).then(console.log);
+
+// By number
+divanHafez({
+    no: 1 // 1 - 495
+}).then(console.log);
+```
+
+## Proxy List
+
+```javascript
+const {proxyList} = require("majidapi/modules/tools");
+
+// List of proxies
+proxyList({
+    protocol: "socks5" // socks5 - socks4
+}).then(console.log);
+```
+
+## Story
+
+```javascript
+const {story} = require("majidapi/modules/fun");
+
+// Story
+story().then(console.log);
+```
+
+## Website ScreenShot
+
+```javascript
+const {screenShot} = require("majidapi/modules/tools");
+
+// ScreenShot
+screenShot({
+    url: "https://majidapi.ir",
+    width: 1280,
+    height: 2000,
+    out: "shot.jpg"
+}).then(console.log);
 ```
