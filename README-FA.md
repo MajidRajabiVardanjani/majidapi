@@ -44,6 +44,7 @@ npm i majidapi --save
 - **[قیمت موبایل](#قیمت-موبایل)**
 - **[قیمت خودرو](#قیمت-خودرو)**
 - **[نرخ ارز دیجیتال بیت پین](#نرخ-ارز-دیجیتال-بیت-پین)**
+- **[نرخ ارز دیجیتال نوبیتکس](#نرخ-ارز-دیجیتال-نوبیتکس)**
 - **[فال](#فال)**
 - **[جوک](#جوک)**
 - **[آپارات](#آپارات)**
@@ -75,6 +76,9 @@ npm i majidapi --save
 - **[پروکسی لیست](#پروکسی-لیست)**
 - **[داستان](#داستان)**
 - **[اسکرین شات از وبسایت](#اسکرین-شات-از-وبسایت)**
+  -**[جمله انگیزشی](#جمله-انگیزشی)**
+- **[اعتبارسنجی کد ملی](#اعتبارسنجی-کد-ملی)**
+- **[اوقات شرعی](#اوقات-شرعی)**
 
 ## اینستاگرام
 
@@ -442,6 +446,18 @@ car({
 car({
     method: "info",
     id: "Car ID"
+}).then(console.log);
+
+// لیست اخبار
+car({
+    method: "news",
+    page: 1
+}).then(console.log);
+
+// شرح خبر
+car({
+    method: "news-info",
+    newsId: "شناسه خبر"
 }).then(console.log);
 ```
 
@@ -1057,9 +1073,55 @@ const {screenShot} = require("majidapi/modules/tools");
 
 // اسکرین شات
 screenShot({
+    type: "photo", // photo | url
     url: "https://majidapi.ir",
     width: 1280,
     height: 2000,
     out: "shot.jpg"
+}).then(console.log);
+```
+
+## جمله انگیزشی
+
+```javascript
+const {angizeshi} = require("majidapi/modules/fun");
+
+// جمله انگیزشی
+angizeshi().then(console.log);
+```
+
+## اعتبارسنجی کد ملی
+
+```javascript
+const {nationalCode} = require("majidapi/modules/tools");
+
+// اعتبارسنجی
+nationalCode({
+    code: "کد ملی"
+}).then(console.log);
+```
+
+## نرخ ارز دیجیتال نوبیتکس
+
+```javascript
+const {nobitex} = require("majidapi/modules/price");
+
+// لیست همه ارز ها
+nobitex().then(console.log);
+
+// دریافت ارز
+nobitex({
+    currency: "btv"
+}).then(console.log);
+```
+
+## اوقات شرعی
+
+```javascript
+const {owghat} = require("majidapi/modules/tools");
+
+// اوقات شرعی
+owghat({
+    city: "tehran" // نام شهر به لاتین
 }).then(console.log);
 ```

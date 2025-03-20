@@ -45,6 +45,7 @@ npm i majidapi --save
 - **[Car Price](#Car-Price)**
 - **[BitPin Crypto Currency Price](#BitPin-Crypto-Currency-Price)**
 - **[Fal](#Fal)**
+- **[Nobitex Crypto Currency Price](#Nobitex-Crypto-Currency-Price)**
 - **[Joke](#Joke)**
 - **[Aparat](#Aparat)**
 - **[Weather](#Weather)**
@@ -75,6 +76,9 @@ npm i majidapi --save
 - **[Proxy List](#Proxy-List)**
 - **[Story](#Story)**
 - **[Website ScreenShot](#Website-ScreenShot)**
+- **[Angizeshi](#Angizeshi)**
+- **[National Code](#National-Code)**
+- **[Owghat Sharei](#Owghat-Sharei)**
 
 ## Instagram
 
@@ -443,6 +447,18 @@ car({
 car({
     method: "info",
     id: "Car ID"
+}).then(console.log);
+
+// News list
+car({
+    method: "news",
+    page: 1
+}).then(console.log);
+
+// News info
+car({
+    method: "news-info",
+    newsId: "The news id"
 }).then(console.log);
 ```
 
@@ -1056,9 +1072,55 @@ const {screenShot} = require("majidapi/modules/tools");
 
 // ScreenShot
 screenShot({
+    type: "photo", // photo or url
     url: "https://majidapi.ir",
     width: 1280,
     height: 2000,
     out: "shot.jpg"
+}).then(console.log);
+```
+
+## Angizeshi
+
+```javascript
+const {angizeshi} = require("majidapi/modules/fun");
+
+// Angizeshi
+angizeshi().then(console.log);
+```
+
+## National Code
+
+```javascript
+const {nationalCode} = require("majidapi/modules/tools");
+
+// Validation
+nationalCode({
+    code: ""
+}).then(console.log);
+```
+
+## Nobitex Crypto Currency Price
+
+```javascript
+const {nobitex} = require("majidapi/modules/price");
+
+// All currencies
+nobitex().then(console.log);
+
+// Get currency
+nobitex({
+    currency: "btv"
+}).then(console.log);
+```
+
+## Owghat Sharei
+
+```javascript
+const {owghat} = require("majidapi/modules/tools");
+
+// Owghat
+owghat({
+    city: "tehran"
 }).then(console.log);
 ```

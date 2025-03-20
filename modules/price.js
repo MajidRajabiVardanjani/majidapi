@@ -35,9 +35,9 @@ module.exports = {
                 });
         })
     },
-    car: ({method = "list", id = ""}) => {
+    car: ({method = "list", id = "", newsId = "", page = 1}) => {
         return new Promise(resolve => {
-            axios.get(`${config.api}/price/car?action=${method}&id=${id}`)
+            axios.get(`${config.api}/price/car?action=${method}&id=${id}&newsId=${newsId}&page=${page}`)
                 .then(r => {
                     config.success(resolve, r);
                 })
@@ -49,6 +49,17 @@ module.exports = {
     bitpin: () => {
         return new Promise(resolve => {
             axios.get(`${config.api}/price/bitpin`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+    nobitex: ({currency = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/price/nobitex?currency=${currency}`)
                 .then(r => {
                     config.success(resolve, r);
                 })

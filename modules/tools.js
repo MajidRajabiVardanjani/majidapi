@@ -102,14 +102,51 @@ module.exports = {
                 });
         })
     },
-    screenShot: ({url = "", width = 1280, height = 2000, out = "shot.jpg"}) => {
+    screenShot: ({type = "photo", url = "", width = 1280, height = 2000, out = "shot.jpg"}) => {
+        let furl = `${config.api}/tools/screenshot?url=${encodeURI(url)}&width=${width}&height=${height}`;
+
         return new Promise(resolve => {
-            config.downloadFile(`${config.api}/tools/screenshot?url=${encodeURI(url)}&width=${width}&height=${height}`, out)
+            if (type === "photo") {
+                config.downloadFile(furl, out)
+                    .then(r => {
+                        resolve(r);
+                    })
+                    .catch(err => {
+                        config.error(resolve, err);
+                    });
+            } else {
+                axios.get(`${furl}&type=url`)
+                    .then(r => {
+                        config.success(resolve, r);
+                    })
+                    .catch(err => {
+                        config.error(resolve, err);
+                    });
+            }
+
+        })
+    },
+
+    nationalCode: ({code = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/nationalcode?code=${code}`)
                 .then(r => {
-                    resolve(r);
+                    config.success(resolve, r)
                 })
                 .catch(err => {
-                    config.error(resolve, err);
+                    config.error(resolve, err)
+                });
+        })
+    },
+
+    owghat: ({city = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/tools/owghat?city=${city}`)
+                .then(r => {
+                    config.success(resolve, r)
+                })
+                .catch(err => {
+                    config.error(resolve, err)
                 });
         })
     }

@@ -175,6 +175,18 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+
+    angizeshi: () => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/fun/angizeshi`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 
 }
