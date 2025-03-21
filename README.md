@@ -79,6 +79,8 @@ npm i majidapi --save
 - **[Angizeshi](#Angizeshi)**
 - **[National Code](#National-Code)**
 - **[Owghat Sharei](#Owghat-Sharei)**
+- **[Wikipedia](#Wikipedia)**
+- **[SMS Bomber](#SMS-Bomber)**
 
 ## Instagram
 
@@ -1122,5 +1124,40 @@ const {owghat} = require("majidapi/modules/tools");
 // Owghat
 owghat({
     city: "tehran"
+}).then(console.log);
+```
+
+## Wikipedia
+
+```javascript
+const {Wikipedia} = require("majidapi/modules/Wikipedia");
+
+// featured
+Wikipedia({
+    acion: "featured"
+}).then(console.log);
+
+// Search
+Wikipedia({
+    acion: "search",
+    search: "ایران",
+    page: 1
+}).then(console.log);
+
+// Info
+Wikipedia({
+    acion: "info",
+    title: "ایران"
+}).then(console.log);
+```
+
+## SMS Bomber
+
+```javascript
+const {smsBomber} = require("majidapi/modules/tools");
+
+// SMS Bomber
+smsBomber({
+    phone: "09..."
 }).then(console.log);
 ```

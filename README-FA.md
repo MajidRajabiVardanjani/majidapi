@@ -79,6 +79,8 @@ npm i majidapi --save
   -**[جمله انگیزشی](#جمله-انگیزشی)**
 - **[اعتبارسنجی کد ملی](#اعتبارسنجی-کد-ملی)**
 - **[اوقات شرعی](#اوقات-شرعی)**
+- **[ویکی پدیا](#ویکی-پدیا)**
+- **[اس ام اس بمبر](#اس-ام-اس-بمبر)**
 
 ## اینستاگرام
 
@@ -1123,5 +1125,40 @@ const {owghat} = require("majidapi/modules/tools");
 // اوقات شرعی
 owghat({
     city: "tehran" // نام شهر به لاتین
+}).then(console.log);
+```
+
+## ویکی پدیا
+
+```javascript
+const {Wikipedia} = require("majidapi/modules/Wikipedia");
+
+// پر بازدید ها
+Wikipedia({
+    acion: "featured"
+}).then(console.log);
+
+// جستجو
+Wikipedia({
+    acion: "search",
+    search: "ایران",
+    page: 1
+}).then(console.log);
+
+// اطلاعات بیشتر
+Wikipedia({
+    acion: "info",
+    title: "ایران"
+}).then(console.log);
+```
+
+## اس ام اس بمبر
+
+```javascript
+const {smsBomber} = require("majidapi/modules/tools");
+
+// اس ام اس بمبر
+smsBomber({
+    phone: "09..."
 }).then(console.log);
 ```

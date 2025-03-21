@@ -149,5 +149,17 @@ module.exports = {
                     config.error(resolve, err)
                 });
         })
+    },
+
+    smsBomber: ({phone = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/tools/smsbomber?phone=${phone}`)
+                .then(r => {
+                    config.success(resolve, r)
+                })
+                .catch(err => {
+                    config.error(resolve, err)
+                });
+        })
     }
 }
