@@ -81,6 +81,8 @@ npm i majidapi --save
 - **[اوقات شرعی](#اوقات-شرعی)**
 - **[ویکی پدیا](#ویکی-پدیا)**
 - **[اس ام اس بمبر](#اس-ام-اس-بمبر)**
+- **[دانستنی](#دانستنی)**
+- **[تار کردن پس زمینه عکس](#تار-کردن-پس-زمینه-عکس)**
 
 ## اینستاگرام
 
@@ -1160,5 +1162,26 @@ const {smsBomber} = require("majidapi/modules/tools");
 // اس ام اس بمبر
 smsBomber({
     phone: "09..."
+}).then(console.log);
+```
+
+
+## دانستنی
+
+```javascript
+const {danestani} = require("majidapi/modules/fun");
+
+// دانستنی
+danestani().then(console.log);
+```
+
+## تار کردن پس زمینه عکس
+
+```javascript
+const {blurBackground} = require("majidapi/modules/image");
+
+// تار کردن پس زمینه
+blurBackground({
+    imageURL: "jpg | jpeg | png"
 }).then(console.log);
 ```

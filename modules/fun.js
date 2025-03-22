@@ -187,6 +187,17 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    danestani: () => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/fun/danestani`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 
 }

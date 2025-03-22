@@ -81,6 +81,8 @@ npm i majidapi --save
 - **[Owghat Sharei](#Owghat-Sharei)**
 - **[Wikipedia](#Wikipedia)**
 - **[SMS Bomber](#SMS-Bomber)**
+- **[Danestani](#Danestani)**
+- **[Blur photo background](#Blur-photo-background)**
 
 ## Instagram
 
@@ -1159,5 +1161,25 @@ const {smsBomber} = require("majidapi/modules/tools");
 // SMS Bomber
 smsBomber({
     phone: "09..."
+}).then(console.log);
+```
+
+## Danestani
+
+```javascript
+const {danestani} = require("majidapi/modules/fun");
+
+// Danestani
+danestani().then(console.log);
+```
+
+## Blur photo background
+
+```javascript
+const {blurBackground} = require("majidapi/modules/image");
+
+// Blur background
+blurBackground({
+    imageURL: "jpg | jpeg | png"
 }).then(console.log);
 ```
