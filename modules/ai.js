@@ -57,6 +57,17 @@ module.exports = {
                 .catch(err => {
                     config.error(resolve, err);
                 });
-        })
+        });
+    },
+    copilot: ({question = "Hello"}) => {
+        return new Promise(resolve => {
+            axios.get(`https://api.majidapi.ir/ai/copilot?q=${encodeURI(question)}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        });
     }
 }

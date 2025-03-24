@@ -19,6 +19,7 @@ npm i majidapi --save
 - **[اینستاگرام](#اینستاگرام)**
 - **[فیسبوک](#فیسبوک)**
 - **[جی پی تی](#جی-پی-تی)**
+- **[کوپایلت](#کوپایلت)**
 - **[متن به گفتار](#متن-به-گفتار)**
 - **[گفتار به متن](#گفتار-به-متن)**
 - **[ساخت عکس با هوش مصنوعی](#ساخت-عکس-با-هوش-مصنوعی)**
@@ -1235,3 +1236,15 @@ const {falCoffee} = require("majidapi/modules/fun");
 // فال قهوه
 falCoffee().then(console.log);
 ```
+
+## کوپایلت
+
+```javascript
+const {copilot} = require("majidapi/modules/ai");
+
+// چت
+copilot({
+    question: "خوبی؟"
+}).then(console.log);
+```
+

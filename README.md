@@ -19,6 +19,7 @@ npm i majidapi --save
 - **[Instagram](#Instagram)**
 - **[Facebook](#Facebook)**
 - **[GPT](#GPT)**
+- **[Copilot](#Copilot)**
 - **[Text To Speech](#Text-To-Speech)**
 - **[Speech To Text](#Speech-To-Text)**
 - **[AI Image Generator](#AI-Image-Generator)**
@@ -1234,3 +1235,15 @@ const {falCoffee} = require("majidapi/modules/fun");
 // Fal Coffee
 falCoffee().then(console.log);
 ```
+
+## Copilot
+
+```javascript
+const {copilot} = require("majidapi/modules/ai");
+
+// Chat
+copilot({
+    question: "How are you?"
+}).then(console.log);
+```
+
