@@ -83,6 +83,10 @@ npm i majidapi --save
 - **[اس ام اس بمبر](#اس-ام-اس-بمبر)**
 - **[دانستنی](#دانستنی)**
 - **[تار کردن پس زمینه عکس](#تار-کردن-پس-زمینه-عکس)**
+- **[پلاک یاب](#پلاک-یاب)**
+- **[متن به ویدیو](#متن-به-ویدیو)**
+- **[فاز سنگین](#فاز-سنگین)**
+- **[فال قهوه](#فال-قهوه)**
 
 ## اینستاگرام
 
@@ -1165,7 +1169,6 @@ smsBomber({
 }).then(console.log);
 ```
 
-
 ## دانستنی
 
 ```javascript
@@ -1184,4 +1187,51 @@ const {blurBackground} = require("majidapi/modules/image");
 blurBackground({
     imageURL: "jpg | jpeg | png"
 }).then(console.log);
+```
+
+## پلاک یاب
+
+```javascript
+const {pelakYab} = require("majidapi/modules/tools");
+
+// بر اساس اسم شهر
+pelakYab({
+    method: "city",
+    city: "تهران"
+}).then(console.log);
+
+// بر اساس شماره پلاک
+pelakYab({
+    method: "num",
+    num: 10
+}).then(console.log);
+```
+
+## متن به ویدیو
+
+```javascript
+const {video} = require("majidapi/modules/ai");
+
+// ساخت ویدیو کوتاه با هوش مصنوعی
+video({
+    prompt: "گربه بازیگوش"
+}).then(console.log);
+```
+
+## فاز سنگین
+
+```javascript
+const {fazeSangin} = require("majidapi/modules/fun");
+
+// فاز سنگین
+fazeSangin().then(console.log);
+```
+
+## فال قهوه
+
+```javascript
+const {falCoffee} = require("majidapi/modules/fun");
+
+// فال قهوه
+falCoffee().then(console.log);
 ```

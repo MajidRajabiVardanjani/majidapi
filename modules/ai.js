@@ -46,5 +46,17 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+
+    video: ({prompt = "a cute cat"}) => {
+        return new Promise(resolve => {
+            axios.get(`https://api.majidapi.ir/ai/video?prompt=${encodeURI(prompt)}&out=url`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

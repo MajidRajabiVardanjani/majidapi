@@ -198,6 +198,28 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
-    }
+    },
 
+    fazeSangin: () => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/fun/fazsangin`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+    falCoffee: () => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/fun/fazsangin`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
 }

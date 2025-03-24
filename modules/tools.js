@@ -161,5 +161,16 @@ module.exports = {
                     config.error(resolve, err)
                 });
         })
+    },
+    pelakYab: ({method = "city", city = "تهران", num = 10}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/tools/pelakyab?action=${method}&city=${city}&num=${num}`)
+                .then(r => {
+                    config.success(resolve, r)
+                })
+                .catch(err => {
+                    config.error(resolve, err)
+                });
+        })
     }
 }

@@ -83,6 +83,10 @@ npm i majidapi --save
 - **[SMS Bomber](#SMS-Bomber)**
 - **[Danestani](#Danestani)**
 - **[Blur photo background](#Blur-photo-background)**
+- **[PelakYab](#PelakYab)**
+- **[Text To Video](#Text-To-Video)**
+- **[Faze Sangin](#Faze-Sangin)**
+- **[Fal Coffee](#Fal-Coffee)**
 
 ## Instagram
 
@@ -1182,4 +1186,51 @@ const {blurBackground} = require("majidapi/modules/image");
 blurBackground({
     imageURL: "jpg | jpeg | png"
 }).then(console.log);
+```
+
+## PelakYab
+
+```javascript
+const {pelakYab} = require("majidapi/modules/tools");
+
+// Based on the name of the city
+pelakYab({
+    method: "city",
+    city: "تهران"
+}).then(console.log);
+
+// Based on license plate number
+pelakYab({
+    method: "num",
+    num: 10
+}).then(console.log);
+```
+
+## Text To Video
+
+```javascript
+const {video} = require("majidapi/modules/ai");
+
+// Making short videos with artificial intelligence
+video({
+    prompt: "a cute cat"
+}).then(console.log);
+```
+
+## Faze Sangin
+
+```javascript
+const {fazeSangin} = require("majidapi/modules/fun");
+
+// Faze Sangin
+fazeSangin().then(console.log);
+```
+
+## Fal Coffee
+
+```javascript
+const {falCoffee} = require("majidapi/modules/fun");
+
+// Fal Coffee
+falCoffee().then(console.log);
 ```
