@@ -213,7 +213,29 @@ module.exports = {
     },
     falCoffee: () => {
         return new Promise(resolve => {
-            axios.get(`${config.api}/fun/fazsangin`)
+            axios.get(`${config.api}/fun/fal/coffee`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+    alakiMasalan: () => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/fun/joke/alakimasalan`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+    dialog: () => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/fun/dialog`)
                 .then(r => {
                     config.success(resolve, r);
                 })

@@ -88,6 +88,9 @@ npm i majidapi --save
 - **[متن به ویدیو](#متن-به-ویدیو)**
 - **[فاز سنگین](#فاز-سنگین)**
 - **[فال قهوه](#فال-قهوه)**
+- **[جوک الکی مثلا](#جوک-الکی-مثلا)**
+- **[دیالوگ](#دیالوگ)**
+- **[چک کردن فیلتر بودن سایت](#چک-کردن-فیلتر-بودن-سایت)**
 
 ## اینستاگرام
 
@@ -330,6 +333,18 @@ filmRail({
 filmRail({
     method: "search",
     search: "The name of the movie or series"
+}).then(console.log);
+
+// لیست ژانر ها
+filmRail({
+    method: "genres"
+}).then(console.log);
+
+// دریافت بر اساس ژانر
+filmRail({
+    method: "genre",
+    id: "Genre ID",
+    page: 1
 }).then(console.log);
 
 // اطلاعات بیشتر و دانلود
@@ -1120,7 +1135,16 @@ nobitex().then(console.log);
 
 // دریافت ارز
 nobitex({
-    currency: "btv"
+    currency: "btc"
+}).then(console.log);
+
+// چارت
+nobitex({
+    method: "chart",
+    symbol: "BTCIRT",
+    minutes: 60, // چند دقیقه قبل
+    resolution: 60, // تایم فریم
+    countBack: 100 // تعداد
 }).then(console.log);
 ```
 
@@ -1245,6 +1269,35 @@ const {copilot} = require("majidapi/modules/ai");
 // چت
 copilot({
     question: "خوبی؟"
+}).then(console.log);
+```
+
+## جوک الکی مثلا
+
+```javascript
+const {alakiMasalan} = require("majidapi/modules/fun");
+
+// الکی مثلا
+alakiMasalan().then(console.log);
+```
+
+## دیالوگ
+
+```javascript
+const {dialog} = require("majidapi/modules/fun");
+
+// دیالوگ ماندگار
+dialog().then(console.log);
+```
+
+## چک کردن فیلتر بودن سایت
+
+```javascript
+const {checkFilter} = require("majidapi/modules/tools");
+
+// چک کردن
+checkFilter({
+    url: "https://www.instagram.com"
 }).then(console.log);
 ```
 

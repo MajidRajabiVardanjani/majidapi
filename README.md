@@ -88,6 +88,8 @@ npm i majidapi --save
 - **[Text To Video](#Text-To-Video)**
 - **[Faze Sangin](#Faze-Sangin)**
 - **[Fal Coffee](#Fal-Coffee)**
+- **[Joke AlakiMasalan](#Joke-AlakiMasalan)**
+- **[Dialog](#Dialog)**
 
 ## Instagram
 
@@ -333,10 +335,23 @@ filmRail({
     search: "The name of the movie or series"
 }).then(console.log);
 
+// Genres
+filmRail({
+    method: "genres"
+}).then(console.log);
+
+// Get by Genre
+filmRail({
+    method: "genre",
+    id: "Genre ID",
+    page: 1
+}).then(console.log);
+
 // Specifications and download
 filmRail({
     method: "details",
-    id: "Movie ID"
+    id: "Movie ID",
+    type: "movies" // movies | series
 }).then(console.log);
 ```
 
@@ -1119,7 +1134,17 @@ nobitex().then(console.log);
 
 // Get currency
 nobitex({
-    currency: "btv"
+    method: "currency",
+    currency: "btc"
+}).then(console.log);
+
+// Get chart
+nobitex({
+    method: "chart",
+    symbol: "BTCIRT",
+    minutes: 60, // how many minutes ago
+    resolution: 60, // timeframe
+    countBack: 100 // count
 }).then(console.log);
 ```
 
@@ -1245,5 +1270,23 @@ const {copilot} = require("majidapi/modules/ai");
 copilot({
     question: "How are you?"
 }).then(console.log);
+```
+
+## Joke AlakiMasalan
+
+```javascript
+const {alakiMasalan} = require("majidapi/modules/fun");
+
+// Alaki Masalan
+alakiMasalan().then(console.log);
+```
+
+## Dialog
+
+```javascript
+const {dialog} = require("majidapi/modules/fun");
+
+// Dialog Mandegar
+dialog().then(console.log);
 ```
 

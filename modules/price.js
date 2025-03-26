@@ -57,9 +57,24 @@ module.exports = {
                 });
         })
     },
-    nobitex: ({currency = ""}) => {
+    nobitex: ({
+                  method = "currency",
+                  currency = "",
+                  symbol = "BTCIRT",
+                  minutes = 60,
+                  resolution = 60,
+                  countBack = 100
+              }) => {
+
+        let furl = `${config.api}/price/nobitex`;
+
+        if (method === "chart") {
+            furl = `${furl}/chart?symbol=${symbol}&minutes=${minutes}&resolution=${resolution}&countBack=${countBack}`
+        } else {
+            furl = `${furl}?currency=${currency}`;
+        }
         return new Promise(resolve => {
-            axios.get(`${config.api}/price/nobitex?currency=${currency}`)
+            axios.get(furl)
                 .then(r => {
                     config.success(resolve, r);
                 })
