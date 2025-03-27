@@ -244,4 +244,15 @@ module.exports = {
                 });
         })
     },
+    chistan: () => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/fun/chistan`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
 }

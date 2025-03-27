@@ -90,6 +90,9 @@ npm i majidapi --save
 - **[Fal Coffee](#Fal-Coffee)**
 - **[Joke AlakiMasalan](#Joke-AlakiMasalan)**
 - **[Dialog](#Dialog)**
+- **[Chistan](#Chistan)**
+- **[Movies and series Filmzi](#Movies-and-series-Filmzi)**
+- **[Drug information 2](#Drug-information-2)**
 
 ## Instagram
 
@@ -1290,3 +1293,63 @@ const {dialog} = require("majidapi/modules/fun");
 dialog().then(console.log);
 ```
 
+## Chistan
+
+```javascript
+const {chistan} = require("majidapi/modules/fun");
+
+// Chistan
+chistan().then(console.log);
+```
+
+## Movies and series Filmzi
+
+```javascript
+const {filmzi} = require("majidapi/modules/movie");
+
+// Home page
+filmzi({
+    method: "home"
+}).then(console.log);
+
+// Featured
+filmzi({
+    method: "featured"
+}).then(console.log);
+
+// Genres
+filmzi({
+    method: "genres"
+}).then(console.log);
+
+// Get by Genre
+filmzi({
+    method: "genre",
+    id: "genre ID",
+    pge: 1
+}).then(console.log);
+
+// Search
+filmzi({
+    method: "search",
+    search: "Joker",
+    page: 1
+}).then(console.log);
+
+// Specifications and download
+filmzi({
+    method: "details",
+    id: "Movie ID"
+}).then(console.log);
+```
+
+## Drug information 2
+
+```javascript
+const {daroo} = require("majidapi/modules/drug");
+
+// Information
+daroo({
+    name: "Acetaminophen"
+}).then(console.log);
+```

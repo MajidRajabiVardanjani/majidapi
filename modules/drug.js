@@ -16,5 +16,17 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+
+    daroo: ({name = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/daroo?name=${encodeURI(name)}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

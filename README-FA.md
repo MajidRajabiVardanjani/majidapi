@@ -91,6 +91,9 @@ npm i majidapi --save
 - **[جوک الکی مثلا](#جوک-الکی-مثلا)**
 - **[دیالوگ](#دیالوگ)**
 - **[چک کردن فیلتر بودن سایت](#چک-کردن-فیلتر-بودن-سایت)**
+- **[چیستان](#چیستان)**
+- **[فیلم و سریال فیلمزی](#فیلم-و-سریال-فیلمزی)**
+- **[اطلاعات دارویی 2](#اطلاعات-دارویی-2)**
 
 ## اینستاگرام
 
@@ -1301,3 +1304,63 @@ checkFilter({
 }).then(console.log);
 ```
 
+## چیستان
+
+```javascript
+const {chistan} = require("majidapi/modules/fun");
+
+// چیستان
+chistan().then(console.log);
+```
+
+## فیلم و سریال فیلمزی
+
+```javascript
+const {filmzi} = require("majidapi/modules/movie");
+
+// صغحه اصلی
+filmzi({
+    method: "home"
+}).then(console.log);
+
+// پر بازدید ها
+filmzi({
+    method: "featured"
+}).then(console.log);
+
+// لیست ژانر ها
+filmzi({
+    method: "genres"
+}).then(console.log);
+
+// دریافت بر اساس ژانر
+filmzi({
+    method: "genre",
+    id: "شناسه ژانر",
+    pge: 1
+}).then(console.log);
+
+// جستجوی فیلم و سریال
+filmzi({
+    method: "search",
+    search: "جوکر",
+    page: 1
+}).then(console.log);
+
+//مشخصات و دانلود
+filmzi({
+    method: "details",
+    id: "شناسه فیلم"
+}).then(console.log);
+```
+
+## اطلاعات دارویی 2
+
+```javascript
+const {daroo} = require("majidapi/modules/drug");
+
+// اطلاعات دارویی
+daroo({
+    name: "Acetaminophen"
+}).then(console.log);
+```

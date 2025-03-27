@@ -12,5 +12,16 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    filmzi: ({method = "home", page = 1, id = "", search = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/movie/filmzi?action=${method}&id=${id}&page=${page}&s=${encodeURI(search)}&type=${type}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }
