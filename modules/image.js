@@ -35,5 +35,16 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    profilePhoto: ({method = "random", page = 1, category = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/fun/profile?action=${method}&page=${page}&category=${encodeURI(category)}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

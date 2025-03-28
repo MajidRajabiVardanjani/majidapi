@@ -98,6 +98,7 @@ npm i majidapi --save
 - **[شاخص توده بدنی](#شاخص-توده-بدنی)**
 - **[کافه بازار](#کافه-بازار)**
 - **[تشخیص زبان متن](#تشخیص-زبان-متن)**
+- **[عکس پروفایل](#عکس-پروفایل)**
 
 ## اینستاگرام
 
@@ -1423,6 +1424,35 @@ const {youtube} = require("majidapi/modules/social");
 
 // دانلود از یوتیوب
 youtube({
-    url: "https://www.youtube.com/watch?v=AbH-xGyQ_XA&list=RDAbH-xGyQ_XA&"
+    url: "https://www.youtube.com/watch?v=AbH-xGyQ_XA&list=RDAbH-xGyQ_XA"
+}).then(console.log);
+```
+
+## عکس پروفایل
+
+```javascript
+const {profilePhoto} = require("majidapi/modules/image");
+
+// عکس پروفایل رندوم
+profilePhoto({
+    method: "random"
+}).then(console.log);
+
+// آخرین تصاویر
+profilePhoto({
+    method: "latest",
+    page: 1
+}).then(console.log);
+
+// دسته بندی ها
+profilePhoto({
+    method: "categories"
+}).then(console.log);
+
+// دریافت بر اساس دسته بندی
+profilePhoto({
+    method: "category",
+    category: "عاشقانه",
+    page: 1
 }).then(console.log);
 ```
