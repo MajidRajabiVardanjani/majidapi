@@ -17,6 +17,7 @@ npm i majidapi --save
 ## لیست وب سرویس ها:
 
 - **[اینستاگرام](#اینستاگرام)**
+- **[یوتیوب](#یوتیوب)**
 - **[فیسبوک](#فیسبوک)**
 - **[جی پی تی](#جی-پی-تی)**
 - **[کوپایلت](#کوپایلت)**
@@ -94,6 +95,9 @@ npm i majidapi --save
 - **[چیستان](#چیستان)**
 - **[فیلم و سریال فیلمزی](#فیلم-و-سریال-فیلمزی)**
 - **[اطلاعات دارویی 2](#اطلاعات-دارویی-2)**
+- **[شاخص توده بدنی](#شاخص-توده-بدنی)**
+- **[کافه بازار](#کافه-بازار)**
+- **[تشخیص زبان متن](#تشخیص-زبان-متن)**
 
 ## اینستاگرام
 
@@ -1362,5 +1366,63 @@ const {daroo} = require("majidapi/modules/drug");
 // اطلاعات دارویی
 daroo({
     name: "Acetaminophen"
+}).then(console.log);
+```
+
+## شاخص توده بدنی
+
+```javascript
+const {bmi} = require("majidapi/modules/tools");
+
+// شاخص توده بدنی
+bmi({
+    height: 175,
+    weight: 75
+}).then(console.log);
+```
+
+## کافه بازار
+
+```javascript
+const {bazar} = require("majidapi/modules/bazar");
+
+// جستجوی برنامه و بازی
+bazar({
+    method: "search",
+    search: "نام برنامه یا بازی"
+}).then(console.log);
+
+// مشخصات
+bazar({
+    method: "info",
+    packageName: "نام پکیج"
+}).then(console.log);
+
+// دانلود
+bazar({
+    method: "download",
+    packageName: "نام پکیج"
+}).then(console.log);
+```
+
+## تشخیص زبان متن
+
+```javascript
+const {languageDetector} = require("majidapi/modules/tools");
+
+// تشخیص زبان
+languageDetector({
+    text: "سلام خوبی؟"
+}).then(console.log);
+```
+
+## یوتیوب
+
+```javascript
+const {youtube} = require("majidapi/modules/social");
+
+// دانلود از یوتیوب
+youtube({
+    url: "https://www.youtube.com/watch?v=AbH-xGyQ_XA&list=RDAbH-xGyQ_XA&"
 }).then(console.log);
 ```

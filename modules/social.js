@@ -92,4 +92,15 @@ module.exports = {
                 });
         })
     },
+    youtube: ({url = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/youtube/download?url=${url}`)
+                .then(r => {
+                    config.success(resolve, r)
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    }
 }

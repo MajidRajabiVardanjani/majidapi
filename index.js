@@ -16,5 +16,6 @@ module.exports = {
     drug: require("./modules/drug"),
     farsroid: require("./modules/farsroid"),
     sport: require("./modules/sport"),
-    wikipedia: require("./modules/wikipedia")
+    wikipedia: require("./modules/wikipedia"),
+    bazar: require("./modules/bazar")
 }

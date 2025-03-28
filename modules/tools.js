@@ -183,5 +183,27 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    bmi: ({height = 175, weight = 75}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/tools/bmi?height=${height}&weight=${weight}`)
+                .then(r => {
+                    config.success(resolve, r)
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+    languageDetector: ({text = "Hello how are you"}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/tools/language-detector?text=${encodeURI(text)}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

@@ -17,6 +17,7 @@ npm i majidapi --save
 ## List of APIs:
 
 - **[Instagram](#Instagram)**
+- **[Youtube](#Youtube)**
 - **[Facebook](#Facebook)**
 - **[GPT](#GPT)**
 - **[Copilot](#Copilot)**
@@ -93,6 +94,9 @@ npm i majidapi --save
 - **[Chistan](#Chistan)**
 - **[Movies and series Filmzi](#Movies-and-series-Filmzi)**
 - **[Drug information 2](#Drug-information-2)**
+- **[BMI](#BMI)**
+- **[CafeBazar](#CafeBazar)**
+- **[Text Language Detector](#Text-Language-Detector)**
 
 ## Instagram
 
@@ -1351,5 +1355,63 @@ const {daroo} = require("majidapi/modules/drug");
 // Information
 daroo({
     name: "Acetaminophen"
+}).then(console.log);
+```
+
+## BMI
+
+```javascript
+const {bmi} = require("majidapi/modules/tools");
+
+// BMI
+bmi({
+    height: 175,
+    weight: 75
+}).then(console.log);
+```
+
+## CafeBazar
+
+```javascript
+const {bazar} = require("majidapi/modules/bazar");
+
+// Search
+bazar({
+    method: "search",
+    search: "Application Name"
+}).then(console.log);
+
+// Info
+bazar({
+    method: "info",
+    packageName: "The app package name"
+}).then(console.log);
+
+// Download
+bazar({
+    method: "download",
+    packageName: "The app package name"
+}).then(console.log);
+```
+
+## Text Language Detector
+
+```javascript
+const {languageDetector} = require("majidapi/modules/tools");
+
+// Language Detector
+languageDetector({
+    text: "Hello how are you?"
+}).then(console.log);
+```
+
+## Youtube
+
+```javascript
+const {youtube} = require("majidapi/modules/social");
+
+// Download from YouTube
+youtube({
+    url: "https://www.youtube.com/watch?v=AbH-xGyQ_XA&list=RDAbH-xGyQ_XA&"
 }).then(console.log);
 ```
