@@ -20,6 +20,7 @@ npm i majidapi --save
 - **[Youtube](#Youtube)**
 - **[Facebook](#Facebook)**
 - **[GPT](#GPT)**
+- **[GPT With Chat Save](#GPT-With-Chat-Save)**
 - **[Copilot](#Copilot)**
 - **[Text To Speech](#Text-To-Speech)**
 - **[Speech To Text](#Speech-To-Text)**
@@ -97,6 +98,7 @@ npm i majidapi --save
 - **[BMI](#BMI)**
 - **[CafeBazar](#CafeBazar)**
 - **[Text Language Detector](#Text-Language-Detector)**
+- **[Extract Text From Photo](#Extract-Text-From-Photo)**
 
 ## Instagram
 
@@ -154,6 +156,24 @@ gpt({
 // GPT Evil
 gpt({
     model: "evil",
+    question: "hello how are you?"
+}).then(console.log);
+```
+
+## GPT With Chat Save
+
+```javascript
+const {gptSaveChat} = require("majidapi/modules/ai");
+
+// Create a new chat
+gptSaveChat({
+    method: "newChat"
+}).then(console.log); // Returns the chat ID.
+
+// to chat
+gptSaveChat({
+    method: "chat",
+    chatId: "Chat ID from the previous method",
     question: "hello how are you?"
 }).then(console.log);
 ```
@@ -1413,5 +1433,17 @@ const {youtube} = require("majidapi/modules/social");
 // Download from YouTube
 youtube({
     url: "https://www.youtube.com/watch?v=AbH-xGyQ_XA&list=RDAbH-xGyQ_XA&"
+}).then(console.log);
+```
+
+## Extract Text From Photo
+
+```javascript
+const {ocr} = require("majidapi/modules/image");
+
+// Extract text from photo
+ocr({
+    lang: "en", // en or fa or en+fa
+    imageUrl: "your image url"
 }).then(console.log);
 ```

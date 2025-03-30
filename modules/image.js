@@ -46,5 +46,17 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+
+    ocr: ({lang = "en", imageUrl = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/tools/ocr?lang=${lang}&image=${encodeURI(imageUrl)}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

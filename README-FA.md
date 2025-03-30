@@ -20,6 +20,7 @@ npm i majidapi --save
 - **[یوتیوب](#یوتیوب)**
 - **[فیسبوک](#فیسبوک)**
 - **[جی پی تی](#جی-پی-تی)**
+- **[جی پی تی با قابلیت ذخیره پیام](#جی-پی-تی-با-قابلیت-ذخیره-پیام)**
 - **[کوپایلت](#کوپایلت)**
 - **[متن به گفتار](#متن-به-گفتار)**
 - **[گفتار به متن](#گفتار-به-متن)**
@@ -99,6 +100,7 @@ npm i majidapi --save
 - **[کافه بازار](#کافه-بازار)**
 - **[تشخیص زبان متن](#تشخیص-زبان-متن)**
 - **[عکس پروفایل](#عکس-پروفایل)**
+- **[استخراج متن از عکس](#استخراج-متن-از-عکس)**
 
 ## اینستاگرام
 
@@ -157,6 +159,24 @@ gpt({
 gpt({
     model: "evil",
     question: "hello how are you?"
+}).then(console.log);
+```
+
+## جی پی تی با قابلیت ذخیره پیام
+
+```javascript
+const {gptSaveChat} = require("majidapi/modules/ai");
+
+// ساخت چت جدید (دریافت چت آی دی)
+gptSaveChat({
+    method: "newChat"
+}).then(console.log); // چت آی دی را بر می گرداند
+
+// چت کردن
+gptSaveChat({
+    method: "chat",
+    chatId: "چت آی دی از متد قبلی",
+    question: "سلام خوبی؟"
 }).then(console.log);
 ```
 
@@ -1454,5 +1474,17 @@ profilePhoto({
     method: "category",
     category: "عاشقانه",
     page: 1
+}).then(console.log);
+```
+
+## استخراج متن از عکس
+
+```javascript
+const {ocr} = require("majidapi/modules/image");
+
+// استخراج متن از عکس
+ocr({
+    lang: "en", // en یا fa یا en+fa
+    imageUrl: "your image url"
 }).then(console.log);
 ```

@@ -25,6 +25,17 @@ module.exports = {
                 });
         })
     },
+    gptSaveChat: ({method = "newChat", chatId = "", question = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/gpt/save-message?action=${method}&chatId=${chatId}&q=${encodeURI(question)}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
     image: ({prompt = "a cute cat"}) => {
         return new Promise(resolve => {
             axios.get(`${config.api}/ai/image?prompt=${encodeURI(prompt)}`)
