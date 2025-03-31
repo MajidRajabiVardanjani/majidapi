@@ -101,6 +101,9 @@ npm i majidapi --save
 - **[تشخیص زبان متن](#تشخیص-زبان-متن)**
 - **[عکس پروفایل](#عکس-پروفایل)**
 - **[استخراج متن از عکس](#استخراج-متن-از-عکس)**
+- **[خلاصه سازی متن فارسی](#خلاصه-سازی-متن-فارسی)**
+- **[اخبار](#اخبار)**
+- **[تحلیل سهام بورس با هوش مصنوعی](#تحلیل-سهام-بورس-با-هوش-مصنوعی)**
 
 ## اینستاگرام
 
@@ -1486,5 +1489,45 @@ const {ocr} = require("majidapi/modules/image");
 ocr({
     lang: "en", // en یا fa یا en+fa
     imageUrl: "your image url"
+}).then(console.log);
+```
+
+## خلاصه سازی متن فارسی
+
+```javascript
+const {summarize} = require("majidapi/modules/ai");
+
+// خلاصه سازی متن
+summarize({
+    text: "متن فارسی"
+}).then(console.log);
+```
+
+## اخبار
+
+```javascript
+const {news} = require("majidapi/modules/news");
+
+// لیست اخبار
+news({
+    method: "list",
+    page: 1
+}).then(console.log);
+
+// شرح خبر
+news({
+    method: "info",
+    id: "شناسه خبر"
+}).then(console.log);
+```
+
+## تحلیل سهام بورس با هوش مصنوعی
+
+```javascript
+const {bourse} = require("majidapi/modules/ai");
+
+// تحلیل
+bourse({
+    symbol: "وبملت"
 }).then(console.log);
 ```

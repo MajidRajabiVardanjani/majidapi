@@ -99,6 +99,8 @@ npm i majidapi --save
 - **[CafeBazar](#CafeBazar)**
 - **[Text Language Detector](#Text-Language-Detector)**
 - **[Extract Text From Photo](#Extract-Text-From-Photo)**
+- **[Summarizing The Persian Text](#Summarizing-The-Persian-Text)**
+- **[News](#News)**
 
 ## Instagram
 
@@ -1445,5 +1447,34 @@ const {ocr} = require("majidapi/modules/image");
 ocr({
     lang: "en", // en or fa or en+fa
     imageUrl: "your image url"
+}).then(console.log);
+```
+
+## Summarizing The Persian Text
+
+```javascript
+const {summarize} = require("majidapi/modules/ai");
+
+// Summarizing the text
+summarize({
+    text: "The persian text"
+}).then(console.log);
+```
+
+## News
+
+```javascript
+const {news} = require("majidapi/modules/news");
+
+// List
+news({
+    method: "list",
+    page: 1
+}).then(console.log);
+
+// Info
+news({
+    method: "info",
+    id: "News ID"
 }).then(console.log);
 ```

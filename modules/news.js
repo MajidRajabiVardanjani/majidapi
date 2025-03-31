@@ -37,5 +37,17 @@ module.exports = {
                     config.error(resolve, err);
                 });
         });
+    },
+
+    news: ({method = "list", page = 1, id = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/news?action=${method}&page=${page}&id=${id}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err)
+                });
+        })
     }
 }

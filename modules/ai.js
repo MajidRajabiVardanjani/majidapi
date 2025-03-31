@@ -80,5 +80,26 @@ module.exports = {
                     config.error(resolve, err);
                 });
         });
-    }
-}
+    },
+    summarize: ({text = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/ai/summarize?text=${encodeURI(text)}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+    bourse: ({symbol = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/ai/bourse?symbol=${encodeURI(symbol)}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    }}
