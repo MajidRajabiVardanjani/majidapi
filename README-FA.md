@@ -104,6 +104,10 @@ npm i majidapi --save
 - **[خلاصه سازی متن فارسی](#خلاصه-سازی-متن-فارسی)**
 - **[اخبار](#اخبار)**
 - **[تحلیل سهام بورس با هوش مصنوعی](#تحلیل-سهام-بورس-با-هوش-مصنوعی)**
+- **[تحلیل رمزارز با هوش مصنوعی](#تحلیل-رمزارز-با-هوش-مصنوعی)**
+- **[رهگیری مرسوله پستی](#رهگیری-مرسوله-پستی)**
+- **[قانون](#قانون)**
+- **[استعلام اینماد](#استعلام-اینماد)**
 
 ## اینستاگرام
 
@@ -1529,5 +1533,51 @@ const {bourse} = require("majidapi/modules/ai");
 // تحلیل
 bourse({
     symbol: "وبملت"
+}).then(console.log);
+```
+
+## تحلیل رمزارز با هوش مصنوعی
+
+```javascript
+const {crypto} = require("majidapi/modules/ai");
+
+// تحلیل
+crypto({
+    currency: "BTC",
+    lang: "fa" // fa | en
+}).then(console.log);
+```
+
+## رهگیری مرسوله پستی
+
+```javascript
+const {postTracking} = require("majidapi/modules/tools");
+
+// رهگیری مرسوله
+postTracking({
+    code: "کد رهگیری",
+    out: "json" // json | text
+}).then(console.log);
+```
+
+## قانون
+
+```javascript
+const {law} = require("majidapi/modules/tools");
+
+// جستجو
+law({
+    search: "سرقت"
+}).then(console.log);
+```
+
+## استعلام اینماد
+
+```javascript
+const {enamad} = require("majidapi/modules/inquiry");
+
+// استعلام
+enamad({
+    domain: "digikala.com"
 }).then(console.log);
 ```

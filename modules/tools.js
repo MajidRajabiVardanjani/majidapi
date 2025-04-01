@@ -205,5 +205,27 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    postTracking: ({code = "", out = "json"}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/tools/post/tracking?code=${code}&out=${out}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+    law: ({search = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/tools/ghanoon?s=${encodeURI(search)}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

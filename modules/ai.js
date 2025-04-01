@@ -102,4 +102,16 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
-    }}
+    },
+    crypto: ({currency = "BTC", lang = "en"}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/ai/crypto?currency=${encodeURI(currency)}&lang=${lang}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    }
+}

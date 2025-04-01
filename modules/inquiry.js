@@ -39,4 +39,16 @@ module.exports = {
         })
     },
 
+    enamad: ({domain = "digikala.com"}) => {
+        return new Promise(resolve => {
+            axios.get(`${config}/inquiry/enamad?domain=${domain}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    }
+
 }

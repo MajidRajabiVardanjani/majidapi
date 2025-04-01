@@ -100,7 +100,11 @@ npm i majidapi --save
 - **[Text Language Detector](#Text-Language-Detector)**
 - **[Extract Text From Photo](#Extract-Text-From-Photo)**
 - **[Summarizing The Persian Text](#Summarizing-The-Persian-Text)**
+- **[Cryptocurrency Analysis With AI](#Cryptocurrency-Analysis-With-AI)**
 - **[News](#News)**
+- **[Post Tracking](#Post-Tracking)**
+- **[Law](#Law)**
+- **[ENamad Inquiry](#ENamad-Inquiry)**
 
 ## Instagram
 
@@ -1476,5 +1480,51 @@ news({
 news({
     method: "info",
     id: "News ID"
+}).then(console.log);
+```
+
+## Cryptocurrency Analysis With AI
+
+```javascript
+const {crypto} = require("majidapi/modules/ai");
+
+// analysis
+crypto({
+    currency: "BTC",
+    lang: "en" // en | fa
+}).then(console.log);
+```
+
+## Post Tracking
+
+```javascript
+const {postTracking} = require("majidapi/modules/tools");
+
+// Tracking
+postTracking({
+    code: "Postal tracking code",
+    out: "json" // json | text
+}).then(console.log);
+```
+
+## Law
+
+```javascript
+const {law} = require("majidapi/modules/tools");
+
+// Search
+law({
+    search: "سرقت"
+}).then(console.log);
+```
+
+## ENamad Inquiry
+
+```javascript
+const {enamad} = require("majidapi/modules/inquiry");
+
+// eNamad Inquiry
+enamad({
+    domain: "digikala.com"
 }).then(console.log);
 ```
