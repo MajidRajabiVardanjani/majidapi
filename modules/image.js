@@ -58,5 +58,16 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    photoEnhancer: ({imageUrl = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/image/enhancer?image=${imageUrl}&out=url`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

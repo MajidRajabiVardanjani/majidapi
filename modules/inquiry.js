@@ -49,6 +49,18 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+
+    shekar: ({id = "", phone = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/inquiry/shekar?phone=${phone}&id=${id}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        });
     }
 
 }

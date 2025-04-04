@@ -105,6 +105,9 @@ npm i majidapi --save
 - **[Post Tracking](#Post-Tracking)**
 - **[Law](#Law)**
 - **[ENamad Inquiry](#ENamad-Inquiry)**
+- **[Photo Enhancer](#Photo-Enhancer)**
+- **[Shekar Database](#Shekar-Database)**
+- **[RadioJavan](#RadioJavan)**
 
 ## Instagram
 
@@ -1526,5 +1529,79 @@ const {enamad} = require("majidapi/modules/inquiry");
 // eNamad Inquiry
 enamad({
     domain: "digikala.com"
+}).then(console.log);
+```
+
+## Photo Enhancer
+
+```javascript
+const {photoEnhancer} = require("majidapi/modules/image");
+
+// Increase photo quality
+photoEnhancer({
+    imageUrl: "Your image URL"
+}).then(console.log);
+```
+
+## Shekar Database
+
+```javascript
+const {shekar} = require("majidapi/modules/inquiry");
+
+// By ID
+shekar({
+    id: "Telegram ChatID"
+}).then(console.log);
+
+// By Phone Number
+shekar({
+    phone: "Phone Number"
+}).then(console.log);
+```
+
+## RadioJavan
+
+```javascript
+const {radioJavan} = require("majidapi/modules/music");
+
+// Home
+radioJavan({
+    method: "home"
+}).then(console.log);
+
+// Trending
+radioJavan({
+    method: "trending",
+    page: 1
+}).then(console.log);
+
+// Videos
+radioJavan({
+    method: "videos",
+    page: 1
+}).then(console.log);
+
+// Video Info
+radioJavan({
+    method: "videoInfo",
+    id: "Video ID"
+}).then(console.log);
+
+// Albums
+radioJavan({
+    method: "albums",
+    page: 1
+}).then(console.log);
+
+// Search
+radioJavan({
+    method: "search",
+    search: "Shayea"
+}).then(console.log);
+
+// Track Info
+radioJavan({
+    method: "info",
+    id: "Track ID"
 }).then(console.log);
 ```

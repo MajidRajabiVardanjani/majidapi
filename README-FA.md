@@ -108,6 +108,9 @@ npm i majidapi --save
 - **[رهگیری مرسوله پستی](#رهگیری-مرسوله-پستی)**
 - **[قانون](#قانون)**
 - **[استعلام اینماد](#استعلام-اینماد)**
+- **[افزایش کیفیت عکس](#افزایش-کیفیت-عکس)**
+- **[دیتابیس شکار](#دیتابیس-شکار)**
+- **[رادیوجوان](#رادیوجوان)**
 
 ## اینستاگرام
 
@@ -1579,5 +1582,79 @@ const {enamad} = require("majidapi/modules/inquiry");
 // استعلام
 enamad({
     domain: "digikala.com"
+}).then(console.log);
+```
+
+## افزایش کیفیت عکس
+
+```javascript
+const {photoEnhancer} = require("majidapi/modules/image");
+
+// افزایش کیفیت
+photoEnhancer({
+    imageUrl: "لینک عکس"
+}).then(console.log);
+```
+
+## دیتابیس شکار
+
+```javascript
+const {shekar} = require("majidapi/modules/inquiry");
+
+// بر اساس آی دی عددی
+shekar({
+    id: "آی دی عددی"
+}).then(console.log);
+
+// بر اساس شماره موبایل
+shekar({
+    phone: "شماره موبایل"
+}).then(console.log);
+```
+
+## رادیوجوان
+
+```javascript
+const {radioJavan} = require("majidapi/modules/music");
+
+// صفحه اصلی
+radioJavan({
+    method: "home"
+}).then(console.log);
+
+// ترند ها
+radioJavan({
+    method: "trending",
+    page: 1
+}).then(console.log);
+
+// ویدیو ها
+radioJavan({
+    method: "videos",
+    page: 1
+}).then(console.log);
+
+// مشخصات ویدیو
+radioJavan({
+    method: "videoInfo",
+    id: "شناسه ویدیو"
+}).then(console.log);
+
+// آلبوم ها
+radioJavan({
+    method: "albums",
+    page: 1
+}).then(console.log);
+
+// جستجو
+radioJavan({
+    method: "search",
+    search: "Shayea"
+}).then(console.log);
+
+// مشخصات آهنگ
+radioJavan({
+    method: "info",
+    id: "شناسه آهنگ"
 }).then(console.log);
 ```

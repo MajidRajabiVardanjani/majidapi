@@ -65,5 +65,22 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+
+    radioJavan: ({
+                     method = "home",
+                     page = 1,
+                     id = "",
+                     search = ""
+                 }) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/music/radiojavan?action=${method}&page=${page}&id=${id}&s=${encodeURI(search)}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }
