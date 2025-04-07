@@ -109,7 +109,7 @@ npm i majidapi --save
 - **[Shekar Database](#Shekar-Database)**
 - **[RadioJavan](#RadioJavan)**
 - **[Likee Downloader](#Likee-Downloader)**
-- **[GitHub Downloader](#GitHub Downloader)**
+- **[GitHub Downloader](#GitHub-Downloader)**
 - **[Web Scraper](#Web-Scraper)**
 - **[Tabaye](#Tabaye)**
 - **[Google Search](#Google-Search)**
