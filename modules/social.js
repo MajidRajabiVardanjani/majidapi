@@ -102,5 +102,27 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    likee: ({url = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/social/likee?url=${url}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+    github: ({url = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/social/github?url=${url}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

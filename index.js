@@ -17,5 +17,6 @@ module.exports = {
     farsroid: require("./modules/farsroid"),
     sport: require("./modules/sport"),
     wikipedia: require("./modules/wikipedia"),
-    bazar: require("./modules/bazar")
+    bazar: require("./modules/bazar"),
+    tabaye: require("./modules/tabaye")
 }

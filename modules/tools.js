@@ -227,5 +227,27 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    webScraper: ({url = "", className = "", id = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/tools/scraper?url=${url}&className=${className}&id=${id}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
+    },
+    googleSearch: ({s = "", page = 1}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/tools/google/search?s=${encodeURI(s)}&page=${page}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

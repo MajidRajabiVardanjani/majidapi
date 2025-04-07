@@ -108,6 +108,11 @@ npm i majidapi --save
 - **[Photo Enhancer](#Photo-Enhancer)**
 - **[Shekar Database](#Shekar-Database)**
 - **[RadioJavan](#RadioJavan)**
+- **[Likee Downloader](#Likee-Downloader)**
+- **[GitHub Downloader](#GitHub Downloader)**
+- **[Web Scraper](#Web-Scraper)**
+- **[Tabaye](#Tabaye)**
+- **[Google Search](#Google-Search)**
 
 ## Instagram
 
@@ -1603,5 +1608,97 @@ radioJavan({
 radioJavan({
     method: "info",
     id: "Track ID"
+}).then(console.log);
+```
+
+## Likee Downloader
+
+```javascript
+const {likee} = require("majidapi/modules/social");
+
+// Download
+likee({
+    url: "https://l.likee.video/v/iWJRSu"
+}).then(console.log);
+```
+
+## GitHub Downloader
+
+```javascript
+const {github} = require("majidapi/modules/social");
+
+// Download
+github({
+    url: "https://github.com/MajidRajabiVardanjani/majidapi"
+}).then(console.log);
+```
+
+## Web Scraper
+
+```javascript
+const {webScraper} = require("majidapi/modules/tools");
+
+// Scraper
+webScraper({
+    url: "https://majidapi.ir",
+    className: "Search by class name (optional)",
+    id: "Search by id (optional)"
+}).then(console.log);
+```
+
+## Tabaye
+
+```javascript
+const {tabaye} = require("majidapi/modules/tabaye");
+
+// https://tabaye.ir
+
+// Posts
+tabaye({
+    method: "posts",
+    page: 1
+}).then(console.log);
+
+// Categories
+tabaye({
+    method: "categories"
+}).then(console.log);
+
+// By Category
+tabaye({
+    method: "category",
+    id: "Category ID",
+    page: 1
+}).then(console.log);
+
+// By Mezaj
+tabaye({
+    method: "mezaj",
+    mezaj: "دموی | صفراوی | بلغمی | سوداوی"
+}).then(console.log);
+
+// Search
+tabaye({
+    method: "search",
+    search: "سردی",
+    page: 1
+}).then(console.log);
+
+// Info
+tabaye({
+    method: "info",
+    id: "Post ID"
+}).then(console.log);
+```
+
+## Google Search
+
+```javascript
+const {googleSearch} = require("majidapi/modules/tools");
+
+// Search
+googleSearch({
+    s: "MajidAPI",
+    page: 1
 }).then(console.log);
 ```

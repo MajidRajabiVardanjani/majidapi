@@ -113,5 +113,16 @@ module.exports = {
                     config.error(resolve, err);
                 });
         })
+    },
+    instagramAI: ({subject = ""}) => {
+        return new Promise(resolve => {
+            axios.get(`${config.api}/ai/instagram?subject=${encodeURI(subject)}`)
+                .then(r => {
+                    config.success(resolve, r);
+                })
+                .catch(err => {
+                    config.error(resolve, err);
+                });
+        })
     }
 }

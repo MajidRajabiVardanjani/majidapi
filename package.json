@@ -52,6 +52,10 @@
     "OCR API",
     "Photo Enhancer",
     "Shekar",
+    "Likee Downloader",
+    "GitHub Downloader",
+    "Web Scraper",
+    "Google search",
     "وب سرویس",
     "وبسرویس",
     "وب سرویس مجید",
@@ -65,7 +69,9 @@
     "اسپاتیفای دانلودر",
     "اس ام اس بمبر",
     "کوپایلت",
-    "دیتابیس شکار"
+    "دیتابیس شکار",
+    "طب سنتی",
+    "هوش مصنوعی اینستاگرام"
   ],
   "author": "Majid Rajabi Vardanjani",
   "license": "ISC",

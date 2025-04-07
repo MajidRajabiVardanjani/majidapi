@@ -111,6 +111,12 @@ npm i majidapi --save
 - **[افزایش کیفیت عکس](#افزایش-کیفیت-عکس)**
 - **[دیتابیس شکار](#دیتابیس-شکار)**
 - **[رادیوجوان](#رادیوجوان)**
+- **[لایکی دانلودر](#لایکی-دانلودر)**
+- **[گیت هاب دانلودر](#گیت-هاب-دانلودر)**
+- **[وب اسکرپر](#وب-اسکرپر)**
+- **[طبایع](#طبایع)**
+- **[جستجو گوگل](#جستجو-گوگل)**
+- **[دستیار هوش مصنوعی اینستاگرام](#دستیار-هوش-مصنوعی-اینستاگرام)**
 
 ## اینستاگرام
 
@@ -1656,5 +1662,108 @@ radioJavan({
 radioJavan({
     method: "info",
     id: "شناسه آهنگ"
+}).then(console.log);
+```
+
+## لایکی دانلودر
+
+```javascript
+const {likee} = require("majidapi/modules/social");
+
+// دانلود
+likee({
+    url: "https://l.likee.video/v/iWJRSu"
+}).then(console.log);
+```
+
+## گیت هاب دانلودر
+
+```javascript
+const {github} = require("majidapi/modules/social");
+
+// دانلود
+github({
+    url: "https://github.com/MajidRajabiVardanjani/majidapi"
+}).then(console.log);
+```
+
+## وب اسکرپر
+
+```javascript
+const {webScraper} = require("majidapi/modules/tools");
+
+// اسکرپ
+webScraper({
+    url: "https://majidapi.ir",
+    className: "جستجو بر اساس نام کلاس (اختیاری)",
+    id: "جستجو بر اساس نام آی دی (اختیاری)"
+}).then(console.log);
+```
+
+## طبایع
+
+```javascript
+const {tabaye} = require("majidapi/modules/tabaye");
+
+// https://tabaye.ir
+
+// لیست پست ها
+tabaye({
+    method: "posts",
+    page: 1
+}).then(console.log);
+
+// لیست دسته بندی ها
+tabaye({
+    method: "categories"
+}).then(console.log);
+
+// دریافت بر اساس دسته بندی
+tabaye({
+    method: "category",
+    id: "شناسه دسته بندی",
+    page: 1
+}).then(console.log);
+
+// بر اساس مزاج
+tabaye({
+    method: "mezaj",
+    mezaj: "دموی | صفراوی | بلغمی | سوداوی"
+}).then(console.log);
+
+// جستجو
+tabaye({
+    method: "search",
+    search: "سردی",
+    page: 1
+}).then(console.log);
+
+// مشخصات (اطلاعات بیشتر)
+tabaye({
+    method: "info",
+    id: "Post ID"
+}).then(console.log);
+```
+
+## جستجو گوگل
+
+```javascript
+const {googleSearch} = require("majidapi/modules/tools");
+
+// جستجو
+googleSearch({
+    s: "وب سرویس مجید",
+    page: 1
+}).then(console.log);
+```
+
+## دستیار هوش مصنوعی اینستاگرام
+
+```javascript
+const {instagramAI} = require("majidapi/modules/ai");
+
+// تولید هشتگ و کپشن
+instagramAI({
+    subject: "موضوع برای تولید هشتگ و کپشن"
 }).then(console.log);
 ```
