@@ -208,10 +208,10 @@ https://api.majidapi.ir/news/akharinkhabar?action=details&newsid=10424714
 • پارامتر newsid:  شناسه خبر (key)
 </details>
 
-##                                   
+## فیلم ریل
 
 <details>
-  <summary>فیلم ریل</summary>
+  <summary>مستندات</summary>
 🟢 صفحه اصلی: 
 
 https://api.majidapi.ir/movie/filmrail?action=home
