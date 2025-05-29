@@ -62,6 +62,13 @@ https://api.majidapi.ir/gpt/3?q=QUESTION
 https://api.majidapi.ir/gpt/35?q=QUESTION
 
 • پارامتر q:  سوال شما
+
+🟢 جی پی تی 4:
+
+https://api.majidapi.ir/gpt/4?q=QUESTION
+
+• پارامتر q:  سوال شما
+
 </details>
 
 ## متن به گفتار
@@ -2025,3 +2032,242 @@ https://api.majidapi.ir/tools/site-to-pdf?url=https://www.google.com
 • پارامتر url: لینک سایت
 </details>
 
+## شعر رندوم
+
+<details>
+  <summary>مستندات</summary>
+🟢 شعر: 
+
+
+https://api.majidapi.ir/fun/poem
+</details>
+
+## آهنگ یاب
+
+<details>
+  <summary>مستندات</summary>
+🟢 پیدا کردن آهنگ از فایل صوتی:
+
+https://api.majidapi.ir/music/recognition?url=https://jenabmusic.musitraf.com/music/2024/03/09/Baraye-Didane-To_Moein.mp3
+
+• پارامتر url: لینک آهنگ (mp3 - ogg - oga)
+
+🟢 پیدا کردن آهنگ از ریلز اینستاگرام:
+
+https://api.majidapi.ir/music/recognition?url=https://www.instagram.com/reel/DIjbyN4IH-f/?igsh=MWEwcWs0aXRoYmQ0cQ==
+
+• پارامتر url: لینک ریلز اینستاگرام
+</details>
+
+## عکس به انیمه جیبلی
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 تبدیل عکس به انیمه:
+
+https://api.majidapi.ir/ai/ghibli?url=YOUR_IMAGE
+
+• پارامتر url: لینک عکس (jpg - jpeg - png - webp - bmp)
+
+</details>
+
+## استخراج متن از عکس
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 استخراج متن:
+
+https://api.majidapi.ir/tools/extract-image-text?image=IMAGE_URL
+
+• پارامتر image: لینک عکس (png - jpg - jpeg)
+</details>
+
+## تبدیل عدد به حروف فارسی
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 تبدیل عدد به حروف:
+
+https://api.majidapi.ir/tools/n2l?number=1404
+
+• پارامتر number: عدد
+</details>
+
+## دیکشنری فارسی و انگلیسی
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 دیکشنری فارسی:
+
+https://api.majidapi.ir/tools/dictionary?lang=fa&text=خوب
+
+• پارامتر lang: زبان مبدا
+
+• پارامتر text: کلمه یا متن مورد نظر
+
+🟢 دیکشنری انگلیسی:
+
+https://api.majidapi.ir/tools/dictionary?lang=en&text=good
+
+• پارامتر lang: زبان مبدا
+
+• پارامتر text: کلمه یا متن مورد نظر
+
+</details>
+
+## وب سرویس دیزر دانلودر | Deezer Downloader
+
+<details>
+
+🟢 جستجو:
+
+https://api.majidapi.ir/music/deezer?action=search&s=shayea&page=1&type=public
+
+• پارامتر action: متد
+
+• پارامتر s: نام آهنگ یا خواننده
+
+• پارامتر page: شماره صفحه
+
+• پارامتر type: نوع (مشخص می کنید در چه قسمتی جستجو می کنید) (public - artist - playlist - podcast - track)
+
+🟢 دریافت آهنگ های خواننده:
+
+https://api.majidapi.ir/music/deezer?action=artist&id=9021656
+
+• پارامتر action: متد
+
+• پارامتر id: شناسه خواننده
+
+🟢 دریافت آهنگ های آلبوم:
+
+https://api.majidapi.ir/music/deezer?action=album&id=251615152
+
+• پارامتر action: متد • پارامتر id: شناسه آلبوم
+
+🟢 دریافت پلی لیست:
+
+https://api.majidapi.ir/music/deezer?action=playlist&id=13183706703
+
+• پارامتر action: متد • پارامتر id: شناسه پلی لیست
+
+🟢 دریافت مشخصات آهنگ:
+
+https://api.majidapi.ir/music/deezer?action=info&id=1463616222
+
+• پارامتر action: متد • پارامتر id: شناسه آهنگ (track)
+
+🟢 دانلود آهنگ (track):
+
+https://api.majidapi.ir/music/deezer?action=download&id=3152455711
+
+• پارامتر action: متد • پارامتر id: شناسه آهنگ (track)
+
+🟢 دانلود آهنگ (track) بر اساس لینک:
+
+https://api.majidapi.ir/music/deezer?action=download&url=https://dzr.page.link/zKF5echQkRVf87Q1A
+
+• پارامتر action: متد • پارامتر url: لینک آهنگ (track)
+
+</details>
+
+## اخبار مالی جهانی
+
+<details>
+  <summary>مستندات</summary>
+
+اخبار فارکس، رمزارز و سهام
+
+🟢 لیست اخبار فارکس:
+
+https://api.majidapi.ir/news/financial?action=forex&page=1
+
+• پارامتر action: متد
+
+• پارامتر page: شماره صفحه
+
+🟢 لیست اخبار رمزارز:
+
+https://api.majidapi.ir/news/financial?action=crypto&page=1
+
+• پارامتر action: متد
+
+• پارامتر page: شماره صفحه
+
+🟢 لیست اخبار سهام:
+
+https://api.majidapi.ir/news/financial?action=stock&page=1
+
+• پارامتر action: متد
+
+• پارامتر page: شماره صفحه
+
+🟢 شرح خبر:
+
+https://api.majidapi.ir/news/financial?action=details&id=c896390e-f8d0-4055-a012-6614bd269b75
+
+• پارامتر action: متد
+
+• پارامتر id: شناسه خبر (BusinessId)
+
+</details>
+
+## شاخص بورس
+
+<details>
+  <summary>مستندات</summary>
+
+شامل: شاخص کل - زمان انتشار - بیشترین مقدار شاخص - کمترین مقدار شاخص - شرکت ها - تاریخچه شاخص
+
+🟢 شاخص بورس:
+
+https://api.majidapi.ir/bourse/index
+
+</details>
+
+## پذیرش 24
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 لیست شهر ها:
+
+https://api.majidapi.ir/paziresh24?action=cities
+
+• پارامتر action: متد
+
+🟢 جستجو:
+
+https://api.majidapi.ir/paziresh24?action=search&s=دندان&page=1
+
+• پارامتر action: متد
+
+• پارامتر s: نام پزشک، بیماری، تخصص یا بیمارستان
+
+• پارامتر page: شماره صفحه
+
+🟢 جستجو بر اساس شهر:
+
+https://api.majidapi.ir/paziresh24?action=searchByCity&city=tehran&s=دندان&page=1
+
+• پارامتر action: متد
+
+• پارامتر city: شهر (slug از وب سرویس لیست شهر ها)
+
+• پارامتر s: نام پزشک، بیماری، تخصص یا بیمارستان
+
+• پارامتر page: شماره صفحه
+
+🟢 مشخصات (اطلاعات بیشتر):
+
+https://api.majidapi.ir/paziresh24?action=info&id=ID
+
+• پارامتر action: متد
+
+• پارامتر id: شناسه از وب سرویس های جستجو
+
+</details>
