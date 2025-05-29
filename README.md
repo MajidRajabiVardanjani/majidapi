@@ -2122,6 +2122,7 @@ https://api.majidapi.ir/tools/dictionary?lang=en&text=good
 ## وب سرویس دیزر دانلودر | Deezer Downloader
 
 <details>
+  <summary>مستندات</summary>
 
 🟢 جستجو:
 
