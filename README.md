@@ -4,6 +4,8 @@
 
 ## [کانال تلگرام](https://t.me/majidapi)
 
+## [صفحه اینستاگرام](https://www.instagram.com/majidapi.ir)
+
 #### [پشتیبانی تلگرام](https://t.me/MajidRajabi1379)
 
 #### [دریافت رمزینه (Token)](https://t.me/MajidAPITokenBot)
@@ -2270,5 +2272,310 @@ https://api.majidapi.ir/paziresh24?action=info&id=ID
 • پارامتر action: متد
 
 • پارامتر id: شناسه از وب سرویس های جستجو
+
+</details>
+
+## با سلام
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 لیست دسته بندی ها:
+
+https://api.majidapi.ir/basalam?action=categories
+
+• پارامتر action: متد
+
+🟢 لیست محصولات بر اساس دسته بندی:
+
+https://api.majidapi.ir/basalam?action=category&id=37&page=1
+
+• پارامتر action: متد
+
+• پارامتر id: شناسه دسته بندی
+
+• پارامتر page: شماره صفحه
+
+🟢 جستجو:
+https://api.majidapi.ir/basalam?action=search&s=برنج&page=1
+
+• پارامتر action: متد
+
+• پارامتر s: نام کالا
+
+• پارامتر page: شماره صفحه
+
+🟢 مشخصات محصول:
+
+https://api.majidapi.ir/basalam?action=product&id=1141877
+
+• پارامتر action: متد
+
+• پارامتر id: شناسه محصول
+
+🟢 کامنت های محصول:
+
+https://api.majidapi.ir/basalam?action=comments&id=1141877&page=1
+
+• پارامتر action: متد
+
+• پارامتر id: شناسه محصول
+
+• پارامتر page: شماره صفحه
+
+
+</details>
+
+## اخبار داغ
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 آخرین اخبار:
+
+https://api.majidapi.ir/akhbar-dagh?action=latest
+
+• پارامتر action: متد
+
+🟢 لیست اخبار بر اساس تگ:
+
+https://api.majidapi.ir/akhbar-dagh?action=byTag&tag=اخبار_سیاسی&page=1
+
+• پارامتر action: متد
+
+• پارامتر tag: تگ خبر (به عنوان مثال: اخبار_ورزشی یا اخبار_اقتصادی)
+
+• پارامتر page: شماره صفحه
+
+🟢 جستجو:
+
+https://api.majidapi.ir/akhbar-dagh?action=search&s=ترامپ&page=1
+
+• پارامتر action: متد
+
+• پارامتر s: موضوع
+
+• پارامتر page: شماره صفحه
+
+🟢 شرح خبر:
+
+https://api.majidapi.ir/akhbar-dagh?action=details&id=1516744
+
+• پارامتر action: متد
+
+• پارامتر id: شناسه خبر
+
+</details>
+
+## تاروت
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 تاروت:
+
+https://api.majidapi.ir/fun/taroot
+
+</details>
+
+## بورس
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 لیست نماد ها:
+
+شامل: اسم، قیمت باز شدن، قیمت بسته شدن، کمترین قیمت، بیشترین قیمت، حجم، ارزش و ...
+
+https://api.majidapi.ir/bourse?action=stocks
+
+• پارامتر action: متد
+
+🟢 بر اساس آخرین روز معاملاتی:
+
+https://api.majidapi.ir/bourse?action=lastTradingDay
+
+• پارامتر action: متد
+
+🟢 جستجو نماد:
+
+https://api.majidapi.ir/bourse?action=search&symbol=خودرو
+
+• پارامتر action: متد
+
+• پارامتر symbol: نماد
+
+🟢 اطلاعات بیشتر:
+
+https://api.majidapi.ir/bourse?action=info&id=167
+
+• پارامتر action: متد
+
+• پارامتر id: شناسه سهام
+
+</details>
+
+## تبدیل پی دی اف به ورد
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 تبدیل پی دی اف به ورد:
+
+https://api.majidapi.ir/tools/pdf2docx?pdf=PDF_URL
+
+• پارامتر pdf: لینک فایل پی دی اف
+
+</details>
+
+## دیپ سیک
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 چت با دیپ سیک:
+
+https://api.majidapi.ir/ai/deepseek?q=اسمت+چیه؟
+
+• پارامتر q: سوالتون
+
+نکته: زمانی که دیپ سیک با خطا مواجه شود، به GPT متصل می شود.
+
+</details>
+
+## تحلیل عکس با هوش مصنوعی
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 تحلیل عکس:
+
+https://api.majidapi.ir/ai/photo-analysis?photo=PHOTO_URL
+
+• پارامتر photo: لینک عکس (jpg - jpeg - png)
+
+</details>
+
+## تولید کردیت کارت
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 کردیت کارت:
+
+https://api.majidapi.ir/tools/credit-card?type=MasterCard
+
+• پارامتر type: نوع (AmericanExpress - MasterCard - Visa - JCB)
+
+</details>
+
+## کوتاه کننده لینک
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 کوتاه کننده لینک:
+
+https://api.majidapi.ir/tools/short/link?url=https://majidapi.ir
+
+• پارامتر url: لینک مورد نظر
+
+</details>
+
+## وب سرویس چت صوتی با GPT
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 چت صوتی:
+
+https://api.majidapi.ir/gpt/voice?gender=woman&voice=VOICE_URL
+
+• پارامتر gender:  ویس خروجی (زن woman و مرد man)
+
+• پارامتر voice: لینک ویس (صدا)
+
+</details>
+
+## تعویض چهره
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 تعویض چهره:
+
+https://api.majidapi.ir/ai/face-swap?target=TARGET_IMAGE&face=FACE_IMAGE
+
+• پارامتر target:  لینک عکس هدف (عکسی که چهره باید روی آن قرار بگیرد)
+
+• پارامتر face: لینک عکس چهره
+
+فرمت عکس ها: (jpeg - jpeg - png
+
+</details>
+
+## وب سرویس تغییر صدا - تقلید صدا
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 تغییر صدا:
+
+https://api.majidapi.ir/ai/voice-changer?voice=VOICE_URL&speaker=Ataran
+
+• پارامتر voice:  لینک صدا (ویس)
+
+• پارامتر speaker: شخصیت => تقلید صدای چه شخصیتی باشد.
+
+💠 لیست شخصیت ها:
+
+رضا عطاران: Ataran
+
+لیلا حاتمی: Leyla.Hatami
+
+پیمان یوسفی: Peyman.Yousefi
+
+جواد عزتی: Javad.Ezzati
+
+امین حیایی: Hayayi
+
+هوتن شکیبا: Hootan.Shakiba
+
+عادل فردوسی پور: Adel
+
+محمدزاده: Mohammadzadeh
+
+ایزدیار: Izadyar
+
+شهاب حسینی: Shahab.Hosseini
+
+محسن یگانه: Mohsen.Yeghane
+
+محسن چاوشی: Chavoshi
+
+اکبر عبدی: Akbar.Abdi
+
+نورائی: Part.Speaker.Nouraei
+
+کیانی: Part.Speaker.Kiani
+
+پونه: Part.Speaker.Pune
+
+بهار: Part.Speaker.Bahar
+
+نکته: محدودیت تایم ویس یک دقیقه دارد
+
+</details>
+
+## تشخیص سن عکس
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 تشخیص سن:
+
+https://api.majidapi.ir/ai/age-detection?photo=PHOTO_URL
+
+• پارامتر photo:  لینک عکس (jpg - jpeg - png)
 
 </details>
