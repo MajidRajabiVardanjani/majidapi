@@ -2579,3 +2579,607 @@ https://api.majidapi.ir/ai/age-detection?photo=PHOTO_URL
 • پارامتر photo:  لینک عکس (jpg - jpeg - png)
 
 </details>
+
+## تبدیل تاریخ | مبدل تاریخ
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 شمسی به میلادی و قمری:
+
+https://api.majidapi.ir/tools/date/convert?from=1&date=1404/03/01
+
+• پارامتر from:  تاریخ مبدا (باید 1 باشد)
+
+• پارامتر date:  تاریخ مورد نظر
+
+🟢 میلادی به شمسی و قمری:
+
+https://api.majidapi.ir/tools/date/convert?from=2&date=2025/06/20
+
+• پارامتر from:  تاریخ مبدا (باید 2 باشد)
+
+• پارامتر date:  تاریخ مورد نظر
+
+🟢 قمری به شمسی و میلادی:
+
+https://api.majidapi.ir/tools/date/convert?from=3&date=1446/12/12
+
+• پارامتر from:  تاریخ مبدا (باید 3 باشد)
+
+• پارامتر date:  تاریخ مورد نظر
+
+</details>
+
+## زومیت
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 لیست ویدیو ها:
+
+https://api.majidapi.ir/zoomit?action=videos
+
+• پارامتر action:  متد
+
+🟢 جدید ترین مقالات:
+
+https://api.majidapi.ir/zoomit?action=newest&page=1
+
+• پارامتر action:  متد
+
+• پارامتر page:  شماره صفحه
+
+🟢 پر بازدید ترین مقالات:
+
+https://api.majidapi.ir/zoomit?action=visit&page=1
+
+• پارامتر action:  متد
+
+• پارامتر page:  شماره صفحه
+
+🟢 محبوب ترین مقالات:
+
+https://api.majidapi.ir/zoomit?action=popular&page=1
+
+• پارامتر action:  متد
+
+• پارامتر page:  شماره صفحه
+
+🟢 پر بحث ترین ترین مقالات:
+
+https://api.majidapi.ir/zoomit?action=discussed&page=1
+
+• پارامتر action:  متد
+
+• پارامتر page:  شماره صفحه
+
+🟢 جستجو:
+
+https://api.majidapi.ir/zoomit?action=search&s=GPT&page=1
+
+• پارامتر action:  متد
+
+• پارامتر s:  عنوان مقاله
+
+• پارامتر page:  شماره صفحه
+
+🟢 جزئیات:
+
+https://api.majidapi.ir/zoomit?action=details&id=ai-articles/431250
+
+• پارامتر action:  متد
+
+• پارامتر id:  شناسه مقاله
+
+</details>
+
+## کوپایلت با قابلیت ذخیره چت
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 ساخت چت جدید:
+
+https://api.majidapi.ir/ai/copilot-save/new
+
+🟢 چت:
+
+https://api.majidapi.ir/ai/copilot-save?chatId=CHAT_ID&q=hello
+
+• پارامتر chatId:  شناسه چتی که از وب سرویس قبل گرفتید
+
+• پارامتر q:  سوالتون
+
+نکته: در صورت منقضی شدن چت آی دی، در وب سرویس خروجی message اعلام می کند که منقضی شده است و شما باید چت آی دی جدید
+دریافت کنید.
+
+</details>
+
+## تغییر رنگ عکس
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 تغییر رنگ:
+
+https://api.majidapi.ir/image/overlay-color?image=IMAGE_URL&color=00ff0040
+
+• پارامتر image:  لینک عکس (jpg - jpeg - png)
+
+• پارامتر color:  کد رنگ (بدون #)
+
+</details>
+
+## کانفیگ و پروکسی تلگرام
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 کانفیگ vmess و vless:
+
+https://api.majidapi.ir/tools/configs
+
+🟢پروکسی تلگرام:
+
+https://api.majidapi.ir/tools/proxies
+
+لیست کانفیگ ها و پروکسی ها هر 15 دقیقه آپدیت می شوند.
+
+</details>
+
+## زیرنویس فارسی فیلم و سریال
+
+<details>
+  <summary>مستندات</summary>
+
+
+متصل به سایت subtitlestar.com
+
+🟢 پیشنهادی:
+
+https://api.majidapi.ir/movie/subtitle?action=suggestion
+
+• پارامتر action:  متد
+
+🟢 لیست زیرنویس ها:
+
+https://api.majidapi.ir/movie/subtitle?action=home&page=1
+
+• پارامتر action:  متد
+
+• پارامتر page:  شماره صفحه
+
+🟢 جستجو زیرنویس:
+
+https://api.majidapi.ir/movie/subtitle?action=search&s=walking+dead&page=1
+
+• پارامتر action:  متد
+
+• پارامتر s:  نام فیلم یا سریال
+
+• پارامتر page:  شماره صفحه
+
+🟢 دانلود زیرنویس:
+
+https://api.majidapi.ir/movie/subtitle?action=download&id=MOVIE_ID
+
+• پارامتر action:  متد
+
+• پارامتر id:  شناسه فیلم یا سریال
+
+</details>
+
+## کاهش حجم ویدیو
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 کاهش حجم:
+
+https://api.majidapi.ir/tools/video/compress?video=MP4_VIDEO
+
+• پارامتر video:  لینک ویدیو (mp4)
+
+</details>
+
+## بررسی گرامر متن با هوش مصنوعی
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 بررسی گرامر:
+
+https://api.majidapi.ir/ai/grammar?text=صلام+ازیزم+خوبی؟
+
+• پارامتر text:  متن مورد نظر برای بررسی گرامر
+
+</details>
+
+## شبا موزیک
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 دسته بندی ها:
+
+https://api.majidapi.ir/music/shabamusic?action=categories
+
+• پارامتر action:  متد
+
+🟢 دانلود بر اساس دسته بندی:
+
+https://api.majidapi.ir/music/shabamusic?action=category&id=vip-music&page=1
+
+• پارامتر action:  متد
+
+• پارامتر id:  شناسه دسته بندی
+
+• پارامتر page:  شماره صفحه
+
+🟢 خواننده ها:
+
+https://api.majidapi.ir/music/shabamusic?action=artists
+
+• پارامتر action:  متد
+
+🟢 دانلود بر اساس خواننده:
+
+https://api.majidapi.ir/music/shabamusic?action=artist&id=رضا-صادقی&page=1
+
+• پارامتر action:  متد
+
+• پارامتر id:  شناسه خواننده
+
+• پارامتر page:  شماره صفحه
+
+🟢 جدیدترین ها:
+
+https://api.majidapi.ir/music/shabamusic?action=newest&page=1
+
+• پارامتر action:  متد
+
+• پارامتر page:  شماره صفحه
+
+🟢 جستجو:
+
+https://api.majidapi.ir/music/shabamusic?action=search&s=سیاه&page=1
+
+• پارامتر action:  متد
+
+• پارامتر s:  نام خواننده یا آهنگ
+
+• پارامتر page:  شماره صفحه
+
+</details>
+
+## تبدیل ورد به پی دی اف | Word to PDF
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 تبدیل ورد به پی دی اف:
+
+https://api.majidapi.ir/tools/docx2pdf?doc=DOCX_URL
+
+• پارامتر doc: لینک فایل ورد (docx)
+
+</details>
+
+## اجرای کد های برنامه نویسی
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 اجرای کد:
+
+https://api.majidapi.ir/tools/code-compiler?code=CODE&lang=php
+
+• پارامتر code: کد مورد نظر برای اجرا
+
+• پارامتر lang: زبان برنامه نویسی
+
+توجه: می توانید پارامتر ها را در قالب json با متد POST هم ارسال کنید.
+
+• لیست زبان های قابل اجرا:
+
+javascript
+
+assembly
+
+c++
+
+c
+
+c#
+
+go
+
+java
+
+kotlin
+
+lua
+
+pascal
+
+perl
+
+php
+
+python
+
+R
+
+ruby
+
+rust
+
+swift
+
+typescript
+
+</details>
+
+## فیلم و سریال آپ تی وی
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 لیست دسته بندی:
+
+https://api.majidapi.ir/movie/uptvs?action=categories
+
+• پارامتر action: متد
+
+🟢 دریافت بر اساس دسته بندی:
+
+https://api.majidapi.ir/movie/uptvs?action=category&id=CATEGORY_ID&page=1
+
+• پارامتر action: متد
+
+• پارامتر id: شناسه دسته بندی
+
+• پارامتر page: شماره صفحه
+
+🟢 جدیدترین فیلم و سریال:
+
+https://api.majidapi.ir/movie/uptvs?action=home&page=1
+
+• پارامتر action: متد
+
+• پارامتر page: شماره صفحه
+
+🟢 جستجو:
+
+https://api.majidapi.ir/movie/uptvs?action=search&s=walking+dead&page=1
+
+• پارامتر action: متد
+
+• پارامتر s: نام فیلم یا سریال
+
+• پارامتر page: شماره صفحه
+
+🟢 دانلود:
+
+https://api.majidapi.ir/movie/uptvs?action=details&id=MOVIE_ID
+
+• پارامتر action: متد
+
+• پارامتر id: شناسه فیلم یا سریال
+
+</details>
+
+## سیاه و سفید کردن عکس
+
+<details>
+  <summary>مستندات</summary>
+
+🟢 سیاه و سفید کردن:
+
+https://api.majidapi.ir/image/grayscale?image=IMAGE_URL
+
+• پارامتر image: لینک عکس (jpg - jpeg - png)
+
+</details>
+
+## ساخت امضاء با هوش مصنوعی
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 ساخت امضاء:
+
+https://api.majidapi.ir/ai/signature?firstName=Name&lastName=Family
+
+• پارامتر firstName: نام به انگلیسی
+
+• پارامتر lastName: نام خانوادگی به انگلیسی
+
+</details>
+
+## استخراج متادیتای عکس
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 متادیتا:
+
+https://api.majidapi.ir/image/metadata?image=IMAGE_URL
+
+• پارامتر image: لینک عکس (jpg - jpeg - png)
+
+</details>
+
+## استخراج صدای ویدیو
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 استخراج صدا:
+
+https://api.majidapi.ir/tools/extract-audio?video=VIDEO_URL
+
+• پارامتر video: لینک ویدیو (mp4)
+
+</details>
+
+## اخبار دیجیاتو
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 صفحه اصلی:
+
+https://api.majidapi.ir/news/digiato?action=home
+
+• پارامتر action: متد
+
+🟢 جدیدترین ها:
+
+https://api.majidapi.ir/news/digiato?action=newest&page=1
+
+• پارامتر action: متد
+
+• پارامتر page: شماره صفحه
+
+🟢 دسته بندی ها:
+
+https://api.majidapi.ir/news/digiato?action=categories
+
+• پارامتر action: متد
+
+🟢 دریافت بر اساس دسته بندی:
+
+https://api.majidapi.ir/news/digiato?action=category&id=tech&page=1
+
+• پارامتر action: متد
+
+• پارامتر id: شناسه دسته بندی
+
+• پارامتر page: شماره صفحه
+
+🟢 شرح خبر:
+
+https://api.majidapi.ir/news/digiato?action=details&id=NEWS_ID
+
+• پارامتر action: متد
+
+• پارامتر id: شناسه خبر
+
+</details>
+
+## اخبار تابناک
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 صفحه اصلی:
+
+https://api.majidapi.ir/news/tabnak?action=home
+
+• پارامتر action: متد
+
+🟢 دسته بندی ها:
+
+https://api.majidapi.ir/news/tabnak?action=categories
+
+• پارامتر action: متد
+
+🟢 دریافت بر اساس دسته بندی:
+
+https://api.majidapi.ir/news/tabnak?action=category&id=world
+
+• پارامتر action: متد
+
+• پارامتر id: شناسه دسته بندی
+
+🟢 ویدیو ها:
+
+https://api.majidapi.ir/news/tabnak?action=videos
+
+• پارامتر action: متد
+
+🟢 شرح خبر:
+
+https://api.majidapi.ir/news/tabnak?action=details&id=NEWS_ID
+
+• پارامتر action: متد
+
+• پارامتر id: شناسه خبر
+
+</details>
+
+## اسکرین شات از ویدیو
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 اسکرین شات:
+
+https://api.majidapi.ir/tools/video-screenshot?video=VIDEO_URL&time=00:00:01
+
+• پارامتر video: لینک ویدیو (mp4)
+
+• پارامتر time: تایم مورد نظر برای گرفتن اسکرین شات (hh:mm:ss)
+
+</details>
+
+## تقلب در اسم و فامیل
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 تقلب:
+
+https://api.majidapi.ir/fun/esmfamil?letter=ب
+
+• پارامتر letter: حرف
+
+</details>
+
+## برش ویدیو
+
+<details>
+  <summary>مستندات</summary>
+
+
+🟢 برش ویدیو:
+
+https://api.majidapi.ir/tools/video-cut?video=VIDEO_URL&start=00:00:10&duration=00:00:25
+
+• پارامتر video: لینک ویدیو (mp4)
+
+• پارامتر start: زمان شروع برش
+
+• پارامتر duration: مدت زمان برش
+
+پارامتر start زمان شروع برش ویدیو رو میگیره (برای شروع از ثانیه 10 به این صورت وارد کنید: 00:00:10)
+
+پارامتر duration مدت زمان برش ویدیو رو میگیره (برای برش ویدیو به مدت 50 ثانیه به این صورت وارد کنید: 00:00:50)
+
+مثلا:
+
+مثلا شما میخواهید از ثانیه 1 به مدت 20 ثانیه برش بدهید:
+
+start: 00:00:01
+
+duration: 00:00:20
+
+</details>
